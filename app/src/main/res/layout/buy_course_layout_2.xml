@@ -1,0 +1,299 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/buy_course_layout"
+    android:id="@+id/buy_course_layout_2"
+    android:layout_marginTop="10dp"
+    android:background="@color/light_grey"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <android.support.v7.widget.CardView android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_below="@+id/view1"
+        android:elevation="12dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginLeft="25dp"
+        app:cardElevation="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/view2"
+        android:layout_marginTop="-10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:id="@+id/view1"
+                    android:layout_height="wrap_content">
+                    <com.koonat.easyfont.TextView
+                        android:layout_weight="45"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Coursera"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        app:font_path="fonts/Roboto-Regular.ttf" />
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="40"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <io.techery.properratingbar.ProperRatingBar
+                            android:id="@+id/rate1"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="1dp"
+                            app:prb_defaultRating="3"
+                            app:prb_tickNormalDrawable="@mipmap/ic_star_normal"
+                            app:prb_tickSelectedDrawable="@mipmap/ic_star_selected"
+                            app:prb_tickSpacing="@dimen/sample_prb_tick_spacing"
+                            app:prb_totalTicks="5" />
+                    </RelativeLayout>
+                    <com.koonat.easyfont.TextView
+                        android:layout_weight="15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="4.5"
+                        android:textColor="@color/black_landing"
+                        android:textSize="20dp"
+                        app:font_path="fonts/Roboto-Regular.ttf" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/view1"
+                    android:id="@+id/view2"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:layout_height="wrap_content">
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:elevation="12dp"
+                            app:cardCornerRadius="3dp"
+                            android:layout_marginLeft="10dp"
+                            app:cardBackgroundColor="@color/green_see_more"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BUY"
+                                android:paddingLeft="5dp"
+                                android:textStyle="bold"
+                                android:paddingRight="5dp"
+                                android:textSize="23dp"
+                                android:textColor="@color/white"/>
+
+
+                        </android.support.v7.widget.CardView>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:paddingBottom="5dp"
+
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_view"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:padding="3dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_cart"/>
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rupee"
+                            android:padding="1dp"
+                            android:layout_toLeftOf="@+id/tv4_cutrate"
+                            android:layout_marginTop="14dp"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"
+                            android:text="@string/rupee"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv4_cutrate"
+                            android:text="12,480"
+                            android:layout_marginTop="15dp"
+                            android:textColor="@color/black"
+                            android:gravity="bottom"
+                            android:textSize="15dp"
+                            android:layout_toLeftOf="@+id/rupee2"
+                            android:background="@drawable/strike"
+                            />
+
+                        <TextView
+                            android:id="@+id/rupee2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:padding="2dp"
+                            android:layout_toLeftOf="@+id/actualprice"
+                            android:text="@string/rupee"
+                            android:textColor="@color/black"
+                            android:textSize="28dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="5dp"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/actualprice"
+                            android:text="980"
+                            android:textColor="@color/black"
+                            android:textSize="28dp" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/view2"
+                    android:layout_marginTop="0dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/down_arrow"
+                        android:layout_height="20dp" />
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/view1"
+        app:cardElevation="10dp"
+        android:elevation="12dp"
+        android:layout_marginLeft="15dp"
+        app:cardBackgroundColor="#2bf2db"
+        android:layout_marginRight="15dp"
+        app:cardCornerRadius="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <com.koonat.easyfont.TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="65"
+                    android:text="Learning Python for Data"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    app:font_path="fonts/Averta-Bold.otf" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_like"
+                        />
+
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="3.2K"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:font_path="fonts/Averta-Bold.otf" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <com.koonat.easyfont.TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="65"
+                    android:text="Analysis and Visualization"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    app:font_path="fonts/Averta-Bold.otf" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_duration"
+                        />
+
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="10 hrs"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:font_path="fonts/Averta-Bold.otf" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

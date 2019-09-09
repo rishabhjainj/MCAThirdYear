@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/chat_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#1aa3ff"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poker Bot"
+                    android:id="@+id/tooltilte"
+                    android:textSize="20dp"
+                    android:layout_marginTop="18dp"
+                    android:textColor="@color/white"
+                    />
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:background="?attr/selectableItemBackground"-->
+                <!--android:padding="13dp"-->
+                <!--android:id="@+id/cart"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@mipmap/ic_cart"/>-->
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/reyclerview_message_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/options_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/view" />
+
+        <!-- A horizontal line between the chatbox and RecyclerView -->
+
+
+        <LinearLayout
+            android:id="@+id/layout_chatbox"
+            android:background="@drawable/rounded_rectanlge_white"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:minHeight="60dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                android:id="@+id/view"
+                android:layout_marginBottom="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/layout_chatbox"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+
+            <EditText
+                android:id="@+id/edittext_chatbox"
+                android:hint="Enter text"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:maxLines="6"/>
+
+            <ImageView
+                android:id="@+id/button_chatbox_send"
+                android:src="@drawable/ic_send"
+                android:textSize="14sp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="44dp"
+                android:padding="10dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:focusable="true" />
+            <ai.api.ui.AIButton
+                android:layout_height="40dp"
+                android:layout_width="50dp"
+                android:id="@+id/micButton"
+                style="@style/ApiAi.Button"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/ic_chat_mic"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

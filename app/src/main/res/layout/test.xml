@@ -1,0 +1,878 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+<RelativeLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recommendedCourse1"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/recommendedInstitutionsLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.koonat.easyfont.TextView
+        android:layout_width="wrap_content"
+        app:font_path="fonts/Averta-Semibold.otf"
+        android:id="@+id/textcomm"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/black_landing"
+        android:text="Based On Communication Score"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textcomm"
+        android:id="@+id/buy_course_layoutt"
+        android:background="@color/white"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+        <android.support.v7.widget.CardView android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_below="@+id/cardVieww"
+            android:elevation="12dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginLeft="15dp"
+            app:cardElevation="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/view22"
+            android:layout_marginTop="-10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto">
+                        <LinearLayout android:layout_width="match_parent"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:padding="10dp"
+                            android:id="@+id/view4"
+                            android:layout_height="wrap_content"
+                            xmlns:android="http://schemas.android.com/apk/res/android">
+                            <com.koonat.easyfont.TextView
+                                android:layout_weight="75"
+                                android:id="@+id/universityy"
+                                android:maxLines="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="Sharda University"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:ellipsize="end"
+                                android:textColor="@color/black"
+                                android:textSize="21dp"
+                                app:font_path="fonts/Averta-Regular.otf" />
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="10"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/ic_star"/>
+                            </RelativeLayout>
+                            <com.koonat.easyfont.TextView
+                                android:layout_weight="15"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:id="@+id/ratingtextt"
+                                android:layout_gravity="left"
+                                android:text="4.5"
+                                android:paddingLeft="2dp"
+                                android:textColor="@color/black_landing"
+                                android:textSize="20dp"
+                                app:font_path="fonts/Averta-Regular.otf" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_below="@+id/view4"
+                            android:id="@+id/middle_layoutt"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="40"
+                                android:layout_height="wrap_content">
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:elevation="12dp"
+                                    android:layout_weight="80"
+                                    app:cardCornerRadius="5dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    app:cardBackgroundColor="#40ba87"
+                                    android:layout_height="wrap_content">
+                                    <com.koonat.easyfont.TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:textAlignment="center"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:ellipsize="end"
+                                        android:id="@+id/courseShortNamee"
+                                        android:text="Verbal Ability"
+                                        app:font_path="fonts/Averta-Semibold.otf"
+                                        android:paddingLeft="8dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:textStyle="bold"
+                                        android:paddingRight="8dp"
+                                        android:textSize="13dp"
+                                        android:textColor="@color/white"/>
+
+
+                                </android.support.v7.widget.CardView>
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_weight="20"
+                                    android:paddingBottom="5dp"
+                                    android:id="@+id/overvieww"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="3dp"
+                                    android:paddingLeft="3dp"
+                                    android:layout_height="45dp"
+                                    android:src="@drawable/ic_info_analysis"/>
+                            </LinearLayout>
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="40"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/modeImage"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/ic_offline"
+                                    />
+                                <com.koonat.easyfont.TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Classroom"
+                                    android:id="@+id/mode"
+                                    android:paddingLeft="0dp"
+                                    android:layout_centerVertical="true"
+                                    android:paddingTop="3dp"
+                                    app:font_path="fonts/Averta-Regular.otf"
+                                    android:paddingBottom="3dp"
+                                    android:textStyle="bold"
+                                    android:paddingRight="5dp"
+                                    android:layout_toLeftOf="@+id/modeImage"
+                                    android:textSize="14dp"
+                                    android:textColor="@color/black_landing"/>
+
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/middle_layoutt"
+                            android:id="@+id/view33"
+                            android:paddingBottom="10dp"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="42"
+                                android:layout_height="wrap_content">
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:elevation="12dp"
+                                    app:cardCornerRadius="3dp"
+                                    app:cardElevation="5dp"
+                                    android:layout_marginLeft="10dp"
+                                    app:cardBackgroundColor="#88c540"
+                                    android:layout_height="wrap_content">
+                                    <com.koonat.easyfont.TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="APPLY"
+                                        android:paddingTop="3dp"
+                                        android:id="@+id/registerButtonn"
+                                        android:paddingBottom="3dp"
+                                        android:paddingLeft="10dp"
+                                        android:textStyle="bold"
+                                        android:paddingRight="10dp"
+                                        app:font_path="fonts/Averta-Bold.otf"
+                                        android:textSize="18dp"
+                                        android:textColor="@color/white"/>
+
+
+                                </android.support.v7.widget.CardView>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:paddingBottom="5dp"
+                                    android:visibility="gone"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_view"/>
+
+                            </LinearLayout>
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="58"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/rupeee"
+                                    android:padding="2dp"
+                                    android:visibility="gone"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_toLeftOf="@+id/cutratee"
+                                    android:layout_marginTop="16dp"
+                                    android:textSize="10dp"
+                                    android:textColor="@color/black"
+                                    android:text="@string/rupee"/>
+
+                                <com.koonat.easyfont.TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/cutratee"
+                                    android:text="12,480"
+                                    android:visibility="gone"
+                                    android:layout_marginTop="17dp"
+                                    android:textColor="@color/black"
+                                    android:gravity="bottom"
+                                    app:font_path="fonts/Averta-Regular.otf"
+                                    android:textSize="10dp"
+                                    android:layout_toLeftOf="@+id/offpercentagee"
+                                    android:background="@drawable/strike"
+                                    />
+                                <com.koonat.easyfont.TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/offpercentagee"
+                                    android:text="(70% OFF)"
+                                    android:visibility="gone"
+                                    app:font_path="fonts/Averta-Regular.otf"
+                                    android:paddingRight="3dp"
+                                    android:paddingLeft="3dp"
+                                    android:layout_marginTop="17dp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center_vertical"
+                                    android:textSize="10dp"
+                                    android:layout_toLeftOf="@+id/rupee22"
+
+                                    />
+
+                                <com.koonat.easyfont.TextView
+                                    android:id="@+id/rupee22"
+                                    app:font_path="fonts/Averta-Regular.otf"
+                                    android:layout_width="wrap_content"
+                                    android:paddingBottom="3dp"
+                                    android:visibility="gone"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:padding="2dp"
+                                    android:layout_toLeftOf="@+id/actualpricee"
+                                    android:text="@string/rupee"
+                                    android:textColor="@color/black"
+                                    android:textSize="26dp" />
+
+                                <com.koonat.easyfont.TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginEnd="8dp"
+                                    app:font_path="fonts/Averta-Regular.otf"
+                                    android:layout_alignParentRight="true"
+                                    android:id="@+id/actualpricee"
+                                    android:text="PAID"
+                                    android:textColor="@color/black"
+                                    android:textSize="25dp" />
+
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardVieww"
+            app:cardElevation="10dp"
+            android:elevation="12dp"
+            android:layout_marginLeft="3dp"
+            app:cardBackgroundColor="@color/darkorangecourse"
+            android:layout_marginRight="3dp"
+            app:cardCornerRadius="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayoutt"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="65"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:layout_height="wrap_content">
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="7dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:id="@+id/courseNamee"
+                        android:text="IELTS - Basic Level"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:font_path="fonts/Averta-Semibold.otf" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="35"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="50"
+                        android:layout_marginLeft="18dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                            android:id="@+id/likeButtonn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:mfb_animate_favorite="true"
+                            android:layout_marginBottom="-8dp"
+                            app:mfb_animate_unfavorite="false"
+                            app:mfb_padding="10"
+                            android:layout_marginRight="-5dp"
+                            android:layout_marginLeft="-10dp"
+                            app:mfb_rotation_duration="400"
+                            android:layout_marginTop="-5dp"
+                            app:mfb_rotation_angle="360"
+                            app:mfb_bounce_duration="300"
+                            android:tint="@color/white"
+                            app:mfb_color="@color/red"
+                            app:mfb_type="heart" />
+
+                        <com.koonat.easyfont.TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/num_likess"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="3.2K"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            app:font_path="fonts/Averta-Semibold.otf" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="50"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:padding="3dp"
+                            android:src="@drawable/ic_duration"
+                            />
+
+                        <com.koonat.easyfont.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/durationn"
+                            android:layout_gravity="center_vertical"
+                            android:text="40 hrs"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            app:font_path="fonts/Averta-Semibold.otf" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/recommendedCourse2"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recommendedCourse1"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.koonat.easyfont.TextView
+            android:layout_width="wrap_content"
+            app:font_path="fonts/Averta-Semibold.otf"
+            android:id="@+id/textlogic"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/black_landing"
+            android:text="Based On Logical Score"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"/>
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textlogic"
+            android:id="@+id/buy_course_layout"
+            android:background="@color/white"
+            xmlns:android="http://schemas.android.com/apk/res/android" >
+            <android.support.v7.widget.CardView android:layout_width="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_below="@+id/cardView"
+                android:elevation="12dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginLeft="15dp"
+                app:cardElevation="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/view2"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:android="http://schemas.android.com/apk/res/android">
+                        <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto">
+                            <LinearLayout android:layout_width="match_parent"
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:padding="10dp"
+                                android:id="@+id/view1"
+                                android:layout_height="wrap_content"
+                                xmlns:android="http://schemas.android.com/apk/res/android">
+                                <com.koonat.easyfont.TextView
+                                    android:layout_weight="75"
+                                    android:id="@+id/university"
+                                    android:maxLines="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="Sharda University"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:ellipsize="end"
+                                    android:textColor="@color/black"
+                                    android:textSize="21dp"
+                                    app:font_path="fonts/Averta-Regular.otf" />
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="10"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/ic_star"/>
+                                </RelativeLayout>
+                                <com.koonat.easyfont.TextView
+                                    android:layout_weight="15"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="5dp"
+                                    android:id="@+id/ratingtext"
+                                    android:layout_gravity="left"
+                                    android:text="4.5"
+                                    android:paddingLeft="2dp"
+                                    android:textColor="@color/black_landing"
+                                    android:textSize="20dp"
+                                    app:font_path="fonts/Averta-Regular.otf" />
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_below="@+id/view1"
+                                android:id="@+id/middle_layout"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="40"
+                                    android:layout_height="wrap_content">
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="0dp"
+                                        android:elevation="12dp"
+                                        android:layout_weight="80"
+                                        app:cardCornerRadius="5dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="10dp"
+                                        app:cardBackgroundColor="#40ba87"
+                                        android:layout_height="wrap_content">
+                                        <com.koonat.easyfont.TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:maxLines="2"
+                                            android:textAlignment="center"
+                                            android:marqueeRepeatLimit="marquee_forever"
+                                            android:ellipsize="end"
+                                            android:id="@+id/courseShortName"
+                                            android:text="Logical Reasoning"
+                                            app:font_path="fonts/Averta-Semibold.otf"
+                                            android:paddingLeft="8dp"
+                                            android:paddingTop="5dp"
+                                            android:paddingBottom="5dp"
+                                            android:textStyle="bold"
+                                            android:paddingRight="8dp"
+                                            android:textSize="13dp"
+                                            android:textColor="@color/white"/>
+
+
+                                    </android.support.v7.widget.CardView>
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_weight="20"
+                                        android:paddingBottom="5dp"
+                                        android:id="@+id/overview"
+                                        android:paddingTop="5dp"
+                                        android:paddingRight="3dp"
+                                        android:paddingLeft="3dp"
+                                        android:layout_height="45dp"
+                                        android:src="@drawable/ic_info_analysis"/>
+                                </LinearLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="40"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_centerVertical="true"
+                                        android:id="@+id/modeImagee"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_alignParentRight="true"
+                                        android:src="@drawable/ic_offline"
+                                        />
+                                    <com.koonat.easyfont.TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Classroom"
+                                        android:id="@+id/modee"
+                                        android:paddingLeft="0dp"
+                                        android:layout_centerVertical="true"
+                                        android:paddingTop="3dp"
+                                        app:font_path="fonts/Averta-Regular.otf"
+                                        android:paddingBottom="3dp"
+                                        android:textStyle="bold"
+                                        android:paddingRight="5dp"
+                                        android:layout_toLeftOf="@+id/modeImagee"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/black_landing"/>
+
+
+                                </RelativeLayout>
+
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_below="@+id/middle_layout"
+                                android:id="@+id/view"
+                                android:paddingBottom="10dp"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="42"
+                                    android:layout_height="wrap_content">
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="wrap_content"
+                                        android:elevation="12dp"
+                                        app:cardCornerRadius="3dp"
+                                        app:cardElevation="5dp"
+                                        android:layout_marginLeft="10dp"
+                                        app:cardBackgroundColor="#88c540"
+                                        android:layout_height="wrap_content">
+                                        <com.koonat.easyfont.TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="APPLY"
+                                            android:paddingTop="3dp"
+                                            android:id="@+id/registerButton"
+                                            android:paddingBottom="3dp"
+                                            android:paddingLeft="10dp"
+                                            android:textStyle="bold"
+                                            android:paddingRight="10dp"
+                                            app:font_path="fonts/Averta-Bold.otf"
+                                            android:textSize="18dp"
+                                            android:textColor="@color/white"/>
+
+
+                                    </android.support.v7.widget.CardView>
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:paddingBottom="5dp"
+                                        android:visibility="gone"
+
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_view"/>
+
+                                </LinearLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="58"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/rupee"
+                                        android:padding="2dp"
+                                        android:visibility="gone"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_toLeftOf="@+id/cutrate"
+                                        android:layout_marginTop="16dp"
+                                        android:textSize="10dp"
+                                        android:textColor="@color/black"
+                                        android:text="@string/rupee"/>
+
+                                    <com.koonat.easyfont.TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/cutrate"
+                                        android:text="12,480"
+                                        android:layout_marginTop="17dp"
+                                        android:textColor="@color/black"
+                                        android:gravity="bottom"
+                                        android:visibility="gone"
+                                        app:font_path="fonts/Averta-Regular.otf"
+                                        android:textSize="10dp"
+                                        android:layout_toLeftOf="@+id/offpercentage"
+                                        android:background="@drawable/strike"
+                                        />
+                                    <com.koonat.easyfont.TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/offpercentage"
+                                        android:text="(70% OFF)"
+                                        android:visibility="gone"
+                                        app:font_path="fonts/Averta-Regular.otf"
+                                        android:paddingRight="3dp"
+                                        android:paddingLeft="3dp"
+                                        android:layout_marginTop="17dp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        android:textSize="10dp"
+                                        android:layout_toLeftOf="@+id/rupee2"
+
+                                        />
+
+                                    <com.koonat.easyfont.TextView
+                                        android:id="@+id/rupee2"
+                                        app:font_path="fonts/Averta-Regular.otf"
+                                        android:layout_width="wrap_content"
+                                        android:paddingBottom="3dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:padding="2dp"
+                                        android:visibility="gone"
+                                        android:layout_toLeftOf="@+id/actualprice"
+                                        android:text="@string/rupee"
+                                        android:textColor="@color/black"
+                                        android:textSize="26dp" />
+
+                                    <com.koonat.easyfont.TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginEnd="8dp"
+                                        app:font_path="fonts/Averta-Regular.otf"
+                                        android:layout_alignParentRight="true"
+                                        android:id="@+id/actualprice"
+                                        android:text="PAID"
+                                        android:textColor="@color/black"
+                                        android:textSize="25dp" />
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView android:layout_width="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardView"
+                app:cardElevation="10dp"
+                android:elevation="12dp"
+                android:layout_marginLeft="3dp"
+                app:cardBackgroundColor="@color/darkorangecourse"
+                android:layout_marginRight="3dp"
+                app:cardCornerRadius="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearLayout"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="65"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+
+                        android:layout_height="wrap_content">
+                        <com.koonat.easyfont.TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="7dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:id="@+id/course_namee"
+                            android:text="Learning Python for Data Analysis and Visualization"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:font_path="fonts/Averta-Semibold.otf" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical"
+                        android:layout_weight="35"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_weight="50"
+                            android:layout_marginLeft="18dp"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                                android:id="@+id/likeButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:mfb_animate_favorite="true"
+                                android:layout_marginBottom="-8dp"
+                                app:mfb_animate_unfavorite="false"
+                                app:mfb_padding="10"
+                                android:layout_marginRight="-5dp"
+                                android:layout_marginLeft="-10dp"
+                                app:mfb_rotation_duration="400"
+                                android:layout_marginTop="-5dp"
+                                app:mfb_rotation_angle="360"
+                                app:mfb_bounce_duration="300"
+                                android:tint="@color/white"
+                                app:mfb_color="@color/red"
+                                app:mfb_type="heart" />
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/num_likes"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="3.2K"
+                                android:textColor="@color/white"
+                                android:textSize="16dp"
+                                app:font_path="fonts/Averta-Semibold.otf" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_weight="50"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:padding="3dp"
+                                android:src="@drawable/ic_duration"
+                                />
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/duration"
+                                android:layout_gravity="center_vertical"
+                                android:text="40 hrs"
+                                android:textColor="@color/white"
+                                android:textSize="16dp"
+                                app:font_path="fonts/Averta-Semibold.otf" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

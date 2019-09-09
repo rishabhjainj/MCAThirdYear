@@ -1,0 +1,2707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/light_grey"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:fillViewport="true"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:focusable="true"
+
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                custom:cardCornerRadius="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/cardview1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="20dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/report_image"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/complete"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/report_image"
+                        android:id="@+id/linear"
+                        android:layout_centerHorizontal="true">
+
+                        <com.koonat.easyfont.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/anylsisreport"
+                            android:textStyle="bold"
+                            app:font_path="fonts/Roboto-Medium.ttf"
+                            android:text="Sample Analysis Report"
+                            android:textColor="@color/filter_blue"
+                            android:textSize="20dp"/>
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:id="@+id/guide2"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_guide"/>
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview1"
+                android:layout_marginBottom="2dp"
+                android:background="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                custom:cardCornerRadius="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/graph"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/chart1"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="0dp" />
+
+                        <LinearLayout
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Brain Bias reading for: "
+                                android:textColor="@color/filter_blue"
+                                android:textSize="@dimen/textSize"
+                                android:textStyle="bold"
+                                app:font_path="fonts/Roboto-Medium.ttf" />
+
+                            <com.koonat.easyfont.TextView
+                                android:id="@+id/childName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Name"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize"
+                                android:textStyle="bold"
+                                app:font_path="fonts/Roboto-Medium.ttf" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/brainText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/graph"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:id="@+id/brain1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_purple"
+
+                            android:padding="10dp">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="LEFT BRAIN BIAS"
+                                android:textColor="@color/purple"
+                                android:textSize="@dimen/textSize2"
+                                android:textStyle="bold"
+                                app:font_path="fonts/Roboto-Medium.ttf" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/brain2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_purple"
+
+                            android:padding="10dp">
+
+                            <com.koonat.easyfont.TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_centerHorizontal="true"
+                                android:text="RIGHT BRAIN BIAS"
+                                android:textColor="@color/purple"
+                                android:textSize="@dimen/textSize2"
+                                android:textStyle="bold"
+                                app:font_path="fonts/Roboto-Medium.ttf" />
+
+                            <com.koonat.easyfont.TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_alignEnd="@+id/textView14"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="60dp"
+                                android:text="Random, Intuitive, Holistic, Synthesize, Subjective, Emotional, Looks at wholes, Symobols and images, Can get meaning and present possibilities"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize2"
+                                app:font_path="fonts/Roboto-Medium.ttf" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/characterstics"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/brainText"
+                        android:background="@drawable/rectangle_purple"
+                        android:padding="10dp">
+
+                        <com.koonat.easyfont.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="CHARACTERSTICS"
+                            android:textColor="@color/purple"
+                            android:textSize="@dimen/textSize2"
+                            android:textStyle="bold"
+                            app:font_path="fonts/Roboto-Medium.ttf" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/charText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/characterstics"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:id="@+id/characterstics1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_purple"
+
+                            android:padding="10dp">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="Logical, Sequencial, Rationale, Highly analytical, Objective, Factual, Looks at parts, Word and language, Can comprehend, Form practical strategies "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize2"
+                                app:font_path="fonts/Roboto-Medium.ttf" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/characterstics2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/characterstics"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_purple"
+                            android:padding="10dp">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="Random, Intuitive, Holistic, Synthesizes,
+Subjective, Emotional, Looks at wholes,
+symbols and images, Can get meaning and
+present possibilities "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize2"
+                                app:font_path="fonts/Roboto-Medium.ttf" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/advantages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/charText"
+                        android:background="@drawable/rectangle_purple"
+                        android:padding="10dp">
+
+                        <com.koonat.easyfont.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="ADVANTAGES"
+                            android:textColor="@color/purple"
+                            android:textSize="@dimen/textSize2"
+                            android:textStyle="bold"
+                            app:font_path="fonts/Roboto-Medium.ttf" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/advanText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/advantages"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:id="@+id/advantages1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_purple"
+
+                            android:padding="10dp">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_centerHorizontal="true"
+                                android:text="Logical, Rational, Specific, High executive ability."
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize2"
+                                app:font_path="fonts/Roboto-Medium.ttf" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/advantages2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/characterstics"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_purple"
+                            android:padding="10dp">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_centerHorizontal="true"
+                                android:text="Creative, Full of ideas, Easy to understand due to openness in expressing of feelings "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize2"
+                                app:font_path="fonts/Roboto-Medium.ttf" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/disadvantages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/advanText"
+                        android:background="@drawable/rectangle_purple"
+                        android:padding="10dp">
+
+                        <com.koonat.easyfont.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="DISADVANTAGES"
+                            android:textColor="@color/purple"
+                            android:textSize="@dimen/textSize2"
+                            android:textStyle="bold"
+                            app:font_path="fonts/Roboto-Medium.ttf" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/disadvanText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/disadvantages"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:id="@+id/disadvantages1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_purple"
+
+                            android:padding="10dp">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="Inflexible, stubborn and resistant to other's ideas and opinions."
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize2"
+                                app:font_path="fonts/Roboto-Medium.ttf" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/disadvantages2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/characterstics"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_purple"
+                            android:padding="10dp">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="Impractical, Emotional leading to impulsive decisions."
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize2"
+                                app:font_path="fonts/Roboto-Medium.ttf" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20dp">
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:focusable="true"
+                android:layout_below="@id/cardview2"
+                android:clickable="true"
+                android:layout_marginBottom="2dp"
+                custom:cardCornerRadius="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/cardview3">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="20dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/graph2"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/chart2"
+                            android:layout_marginLeft="-20dp"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:visibility="gone"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:id="@+id/name2"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="Smart Branding Quotient for:  "
+                                android:textColor="@color/filter_blue"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+                                <com.koonat.easyfont.TextView
+                                    android:layout_width="wrap_content"
+                                    app:font_path="fonts/Roboto-Medium.ttf"
+                                    android:layout_height="wrap_content"
+                                    android:text="Name"
+                                    android:textStyle="bold"
+                                    android:id="@+id/name_child"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textSize"/>
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:id="@+id/guide"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:src="@drawable/ic_guide"/>
+                            </LinearLayout>
+
+
+
+                            <com.github.mikephil.charting.charts.RadarChart
+                                android:id="@+id/radarChart"
+                                android:layout_marginLeft="0dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="350dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/interpretation"
+                        android:padding="10dp"
+                        android:layout_below="@+id/graph2"
+                        android:background="@drawable/rectangle_purple">
+
+                        <com.koonat.easyfont.TextView
+                            android:layout_width="wrap_content"
+                            app:font_path="fonts/Roboto-Medium.ttf"
+                            android:layout_height="wrap_content"
+                            android:text="INTERPRETATION OF ABOVE CHART"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/purple"
+                            android:textSize="@dimen/textSize2"/>
+                    </RelativeLayout>
+
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/interpretationText"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/rectangle_purple"
+                        android:layout_below="@id/interpretation"
+                        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+                        <com.koonat.easyfont.TextView
+                            android:layout_width="wrap_content"
+                            app:font_path="fonts/Roboto-Medium.ttf"
+                            android:layout_height="wrap_content"
+                            android:text="@string/int1"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize2"/>
+
+                        <com.koonat.easyfont.TextView
+                            android:layout_width="wrap_content"
+                            app:font_path="fonts/Roboto-Medium.ttf"
+                            android:layout_height="wrap_content"
+                            android:text="@string/int2"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize2"/>
+
+                        <com.koonat.easyfont.TextView
+                            android:layout_width="wrap_content"
+                            app:font_path="fonts/Roboto-Medium.ttf"
+                            android:layout_height="wrap_content"
+                            android:text="@string/int3"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize2"/>
+                        <com.koonat.easyfont.TextView
+                            android:layout_width="wrap_content"
+                            app:font_path="fonts/Roboto-Medium.ttf"
+                            android:layout_height="wrap_content"
+                            android:text="@string/int4"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize2"/>
+                        <com.koonat.easyfont.TextView
+                            android:layout_width="wrap_content"
+                            app:font_path="fonts/Roboto-Medium.ttf"
+                            android:layout_height="wrap_content"
+                            android:text="@string/int5"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize2"/>
+                        <com.koonat.easyfont.TextView
+                            android:layout_width="wrap_content"
+                            app:font_path="fonts/Roboto-Medium.ttf"
+                            android:layout_height="wrap_content"
+                            android:text="@string/int6"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize2"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:focusable="true"
+                android:layout_below="@id/cardview3"
+                android:clickable="true"
+                android:layout_marginBottom="2dp"
+                custom:cardCornerRadius="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/cardview4">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="20dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/name3"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content">
+
+                        <com.koonat.easyfont.TextView
+                            android:layout_width="wrap_content"
+                            app:font_path="fonts/Roboto-Medium.ttf"
+                            android:layout_height="wrap_content"
+                            android:text="Here is split of factors involved in Smart Branding Quotient:"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/textSize2"/>
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:id="@+id/intelligence_box"
+                        android:layout_below="@id/name3"
+                        android:background="@drawable/rectangle_purple">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/intelligence">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/imag1"
+                                android:src="@drawable/ic_intelligence"/>
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/fabColor"
+                                android:text="INTELLIGENCE FACTOR"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/intelligence"
+                            android:id="@+id/intelligenceText">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="This factor corresponds to Intelligence Quotient which is designed to assess human intelligence in terms of Problem-Solving, Speed, accuracy, observation power, memorization, concentration etc."
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize2"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/intelligenceText"
+                            android:id="@+id/intelligenceBar">
+
+                            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                                android:layout_width="210dp"
+                                android:layout_height="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/intelli"
+                                app:rcBackgroundColor="@color/custom_progress_background"
+                                app:rcBackgroundPadding="2dp"
+                                app:rcMax="400"
+                                app:rcProgress="200"
+                                app:rcProgressColor="@color/fabColor"
+                                app:rcRadius="20dp" />
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="200"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/intelligenceScore"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize2"/>
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="/400"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize2"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:id="@+id/emotionalBox"
+                        android:layout_below="@id/intelligence_box"
+                        android:background="@drawable/rectangle_purple">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/emotional">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/imag2"
+                                android:src="@drawable/ic_emotional"/>
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/accent"
+                                android:text="EMOTIONAL FACTOR"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/emotional"
+                            android:id="@+id/emotionalText">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="This factor corresponds to the capability of individuals to recognize their own and other people's emotions, discern between different feelings and label them appropriately, use emotional information to guide thinking and behavior"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize2"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/emotionalText"
+                            android:id="@+id/emotionalBar">
+
+                            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                                android:layout_width="210dp"
+                                android:layout_height="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/emo"
+                                app:rcBackgroundColor="@color/custom_progress_background"
+                                app:rcBackgroundPadding="2dp"
+                                app:rcMax="400"
+                                app:rcProgress="350"
+                                app:rcProgressColor="@color/accent"
+                                app:rcRadius="20dp" />
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="350"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/emotionalScore"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize2"/>
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="/400"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize2"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:id="@+id/socialBox"
+                        android:layout_below="@+id/emotionalBox"
+                        android:background="@drawable/rectangle_purple">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/social">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/imag3"
+                                android:src="@drawable/ic_social"/>
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/green"
+                                android:text="SOCIAL FACTOR"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/social"
+                            android:id="@+id/socialText">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="This factor corresponds to the capability to effectively navigate and negotiate complex interpersonal and intrapersonal relationships and environments."
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize2"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/socialText"
+                            android:id="@+id/socialBar">
+
+                            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                                android:layout_width="210dp"
+                                android:layout_height="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:id="@+id/socials"
+                                android:layout_marginTop="10dp"
+                                app:rcBackgroundColor="@color/custom_progress_background"
+                                app:rcBackgroundPadding="2dp"
+                                app:rcMax="400"
+                                app:rcProgress="250"
+                                app:rcProgressColor="@color/green"
+                                app:rcRadius="20dp" />
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="250"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/socialScore"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize2"/>
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="/400"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize2"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:id="@+id/verbalBox"
+                        android:layout_below="@+id/socialBox"
+                        android:background="@drawable/rectangle_purple">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/verbal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/imag4"
+                                android:src="@drawable/ic_social"/>
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorAccent"
+                                android:text="VERBAL ABILITY FACTOR"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/verbal"
+                            android:id="@+id/verbalText">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="This factor corresponds to the ability to analyze information and solve problems using language-based reasoning. Language-based reasoning may involve reading or listening to words, conversing, writing, or even thinking. "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize2"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/verbalText"
+                            android:id="@+id/verbalBar">
+
+                            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                                android:layout_width="200dp"
+                                android:layout_height="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                app:rcBackgroundColor="@color/custom_progress_background"
+                                app:rcBackgroundPadding="2dp"
+                                android:id="@+id/verba"
+                                app:rcMax="400"
+                                app:rcProgress="200"
+                                app:rcProgressColor="@color/colorAccent"
+                                app:rcRadius="20dp" />
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="200"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/verbalScore"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize2"/>
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="/400"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize2"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:id="@+id/creativeBox"
+                        android:layout_below="@+id/verbalBox"
+                        android:background="@drawable/rectangle_purple">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/creative">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:id="@+id/imag5"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_creativity"/>
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/red"
+                                android:text="CREATIVITY FACTOR"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/creative"
+                            android:id="@+id/creativityText">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="This factor corresponds to the ability to come up with new ideas through a mental process of connecting existing concepts.  "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize2"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/creativityText"
+                            android:id="@+id/creativeBar">
+
+                            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                                android:layout_width="210dp"
+                                android:layout_height="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/creativity"
+                                app:rcBackgroundColor="@color/custom_progress_background"
+                                app:rcBackgroundPadding="2dp"
+                                app:rcMax="400"
+                                app:rcProgress="300"
+                                app:rcProgressColor="@color/red"
+                                app:rcRadius="20dp" />
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="300"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/creativeScore"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize2"/>
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="/400"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize2"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:id="@+id/spatialBox"
+                        android:layout_below="@+id/creativeBox"
+                        android:background="@drawable/rectangle_purple">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/spatial">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:id="@+id/imag6"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_emotional"/>
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gold"
+                                android:text="SPATIAL FACTOR"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/spatial"
+                            android:id="@+id/spatialText">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="This factor corresponds to the ability to comprehend three-dimensional images and shapes. This factor is quite involved when solving puzzles, figuring out maps etc."
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize2"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/spatialText"
+                            android:id="@+id/spatialBar">
+
+                            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                                android:id="@+id/spatia"
+                                android:layout_width="210dp"
+                                android:layout_height="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                app:rcBackgroundColor="@color/custom_progress_background"
+                                app:rcBackgroundPadding="2dp"
+                                app:rcMax="400"
+                                app:rcProgress="100"
+                                app:rcProgressColor="@color/gold"
+                                app:rcRadius="20dp" />
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="100"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/spatialScore"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize2"/>
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="/400"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize2"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:padding="10dp"
+                        android:id="@+id/commBox"
+                        android:layout_below="@+id/spatialBox"
+                        android:background="@drawable/rectangle_purple"
+                        xmlns:android="http://schemas.android.com/apk/res/android">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/comm">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:id="@+id/imag6"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_emotional"/>
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/green_see_more"
+                                android:text="COMMUNICATION FACTOR"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/comm"
+                            android:id="@+id/commText">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="This factor corresponds to the ability to comprehend three-dimensional images and shapes. This factor is quite involved when solving puzzles, figuring out maps etc."
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize2"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/commText"
+                            android:id="@+id/commBar">
+
+                            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                                android:id="@+id/comma"
+                                android:layout_width="210dp"
+                                android:layout_height="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                app:rcBackgroundColor="@color/custom_progress_background"
+                                app:rcBackgroundPadding="2dp"
+                                app:rcMax="400"
+                                app:rcProgress="100"
+                                app:rcProgressColor="@color/gold"
+                                app:rcRadius="20dp" />
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="100"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/commScore"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize2"/>
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="/400"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize2"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:padding="10dp"
+                        android:id="@+id/logicalBox"
+                        android:layout_below="@+id/commBox"
+                        android:background="@drawable/rectangle_purple"
+                        xmlns:android="http://schemas.android.com/apk/res/android">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/logical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:id="@+id/imag6"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_emotional"/>
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/dark_purple"
+                                android:text="LOGICAL FACTOR"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/logical"
+                            android:id="@+id/logicalText">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="This factor corresponds to the ability to comprehend three-dimensional images and shapes. This factor is quite involved when solving puzzles, figuring out maps etc."
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize2"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/logicalText"
+                            android:id="@+id/logicalBar">
+
+                            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                                android:id="@+id/logica"
+                                android:layout_width="210dp"
+                                android:layout_height="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                app:rcBackgroundColor="@color/custom_progress_background"
+                                app:rcBackgroundPadding="2dp"
+                                app:rcMax="400"
+                                app:rcProgress="100"
+                                app:rcProgressColor="@color/gold"
+                                app:rcRadius="20dp" />
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="100"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/logicalScore"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize2"/>
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                app:font_path="fonts/Roboto-Medium.ttf"
+                                android:layout_height="wrap_content"
+                                android:text="/400"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize2"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/spatialBox"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:id="@+id/careerReportButtonn"
+                app:cardElevation="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/barchart1"
+                        android:padding="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/textbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="25dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:text="McKenzie's Intelligence Model"
+                                android:textAllCaps="true"
+                                android:textColor="@color/filter_blue"
+                                android:textSize="@dimen/textSize"
+                                app:font_path="fonts/Roboto-Medium.ttf" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                android:layout_height="wrap_content">
+                                <com.koonat.easyfont.TextView
+                                    android:layout_width="wrap_content"
+                                    app:font_path="fonts/Roboto-Medium.ttf"
+                                    android:layout_height="wrap_content"
+                                    android:text="Name"
+                                    android:textStyle="bold"
+                                    android:id="@+id/name_childd"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textSize"/>
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:id="@+id/guidee"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:src="@drawable/ic_guide"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/bar_chart"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:layout_below="@id/textbar" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true"
+                            android:background="@color/white"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:background="@color/red500" />
+
+                                <com.koonat.easyfont.TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/wiki_title"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginTop="4dp"
+                                    android:paddingLeft="2dp"
+                                    android:text="Analytical"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    app:font_path="fonts/Roboto-Regular.ttf" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginTop="8dp"
+                                    android:background="@color/yellow" />
+
+                                <com.koonat.easyfont.TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/wiki_title"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginTop="4dp"
+                                    android:paddingLeft="2dp"
+                                    android:text="Interactive"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    app:font_path="fonts/Roboto-Regular.ttf" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginTop="8dp"
+                                    android:background="@color/orange" />
+
+                                <com.koonat.easyfont.TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/wiki_title"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginTop="4dp"
+                                    android:paddingLeft="2dp"
+                                    android:text="Introspective"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    app:font_path="fonts/Roboto-Regular.ttf" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="#F5C700" />
+
+                                <com.koonat.easyfont.TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/wiki_title"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginTop="3dp"
+                                    android:paddingLeft="2dp"
+                                    android:text="Dropout"
+                                    android:textSize="10dp"
+                                    android:textStyle="bold"
+                                    app:font_path="fonts/Roboto-Regular.ttf" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/careerReportButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spatialBox"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="4dp"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/halfpiechart"
+                            android:layout_width="match_parent"
+                            android:visibility="gone"
+                            android:layout_height="220dp"
+                            android:orientation="vertical">
+
+                            <RelativeLayout android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textHalf"
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                                <com.koonat.easyfont.TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="30dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="Your Egogram"
+                                    android:id="@+id/egotext"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/filter_blue"
+                                    android:textSize="@dimen/textSize"
+                                    app:font_path="fonts/Roboto-Medium.ttf" />
+                                <ImageView
+                                    android:id="@+id/egogram_info"
+                                    android:layout_width="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@+id/egotext"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_info"
+                                    />
+                            </RelativeLayout>
+                            <com.github.mikephil.charting.charts.PieChart
+                                android:id="@+id/half_piechart"
+                                android:layout_width="match_parent"
+                                android:layout_height="220dp"
+                                android:layout_below="@+id/textHalf"
+                                />
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.koonat.easyfont.TextView
+                            android:id="@+id/texthori"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Horizontal Chart"
+                            android:textAllCaps="true"
+                            android:textColor="@color/purple"
+                            android:textSize="13sp"
+                            app:font_path="fonts/Roboto-Medium.ttf" />
+
+                        <com.github.mikephil.charting.charts.HorizontalBarChart
+                            android:id="@+id/horizontalchart"
+                            android:layout_width="match_parent"
+                            android:layout_height="350dp"
+                            android:layout_below="@+id/texthori" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <include layout="@layout/career_options_layout"/>
+            <include layout="@layout/subjects_layout"/>
+            <include layout="@layout/institutions_with_courses_layout"/>
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@id/cardview4"-->
+            <!--android:id="@+id/coursesRecyclerViewContainer">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Recommended Career Options"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:textSize="15sp"-->
+            <!--android:id="@+id/textView16"-->
+            <!--android:textColor="@color/filter_blue"/>-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/coursesRecyclerView"-->
+            <!--android:layout_below="@+id/textView16"-->
+            <!--android:layout_alignParentStart="true"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@+id/coursesRecyclerViewContainer"-->
+            <!--android:id="@+id/shortTermCoursesRecyclerViewContainer">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Recommended Courses"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:textSize="15sp"-->
+            <!--android:id="@+id/textView13"-->
+            <!--android:textColor="@color/filter_blue"/>-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/shortTermCoursesRecyclerView"-->
+            <!--android:layout_below="@+id/textView13"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@+id/shortTermCoursesRecyclerViewContainer"-->
+            <!--android:id="@+id/recommendedInstitutionsLayout">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Recommended Institutions"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:textSize="15sp"-->
+            <!--android:id="@+id/recInstText"-->
+            <!--android:textColor="@color/filter_blue"/>-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/institutions_recyclerview"-->
+            <!--android:layout_below="@+id/recInstText"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+            <!--</RelativeLayout>-->
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                xmlns:android="http://schemas.android.com/apk/res/android" />
+                <RelativeLayout android:layout_width="match_parent"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/recommendedCourse1"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recommendedInstitutionsLayout"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        app:font_path="fonts/Averta-Semibold.otf"
+                        android:id="@+id/textcomm"
+                        android:padding="10dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black_landing"
+                        android:text="Based On Communication Score"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"/>
+                    <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textcomm"
+                        android:id="@+id/buy_course_layoutt"
+                        android:background="@color/white"
+                        xmlns:android="http://schemas.android.com/apk/res/android" >
+                        <android.support.v7.widget.CardView android:layout_width="match_parent"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_below="@+id/cardVieww"
+                            android:elevation="12dp"
+                            app:cardBackgroundColor="@color/white"
+                            android:layout_marginLeft="15dp"
+                            app:cardElevation="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="15dp"
+                            android:id="@+id/view22"
+                            android:layout_marginTop="-10dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_height="wrap_content"
+                            xmlns:android="http://schemas.android.com/apk/res/android">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:android="http://schemas.android.com/apk/res/android">
+                                    <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        xmlns:android="http://schemas.android.com/apk/res/android"
+                                        xmlns:app="http://schemas.android.com/apk/res-auto">
+                                        <LinearLayout android:layout_width="match_parent"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            android:padding="10dp"
+                                            android:id="@+id/view4"
+                                            android:layout_height="wrap_content"
+                                            xmlns:android="http://schemas.android.com/apk/res/android">
+                                            <com.koonat.easyfont.TextView
+                                                android:layout_weight="75"
+                                                android:id="@+id/universityy"
+                                                android:maxLines="1"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:text="Sharda University"
+                                                android:marqueeRepeatLimit="marquee_forever"
+                                                android:ellipsize="end"
+                                                android:textColor="@color/black"
+                                                android:textSize="21dp"
+                                                app:font_path="fonts/Averta-Regular.otf" />
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_weight="10"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_height="wrap_content">
+                                                <ImageView
+                                                    android:layout_width="30dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_height="30dp"
+                                                    android:src="@drawable/ic_star"/>
+                                            </RelativeLayout>
+                                            <com.koonat.easyfont.TextView
+                                                android:layout_weight="15"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:paddingTop="5dp"
+                                                android:id="@+id/ratingtextt"
+                                                android:layout_gravity="left"
+                                                android:text="4.5"
+                                                android:paddingLeft="2dp"
+                                                android:textColor="@color/black_landing"
+                                                android:textSize="20dp"
+                                                app:font_path="fonts/Averta-Regular.otf" />
+
+
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:orientation="horizontal"
+                                            android:layout_below="@+id/view4"
+                                            android:id="@+id/middle_layoutt"
+                                            android:layout_height="wrap_content">
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="40"
+                                                android:layout_height="wrap_content">
+                                                <android.support.v7.widget.CardView
+                                                    android:layout_width="0dp"
+                                                    android:elevation="12dp"
+                                                    android:layout_weight="80"
+                                                    app:cardCornerRadius="5dp"
+                                                    android:layout_gravity="center_vertical"
+                                                    android:layout_marginLeft="10dp"
+                                                    app:cardBackgroundColor="#40ba87"
+                                                    android:layout_height="wrap_content">
+                                                    <com.koonat.easyfont.TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:maxLines="2"
+                                                        android:textAlignment="center"
+                                                        android:marqueeRepeatLimit="marquee_forever"
+                                                        android:ellipsize="end"
+                                                        android:id="@+id/courseShortNamee"
+                                                        android:text="Verbal Ability"
+                                                        app:font_path="fonts/Averta-Semibold.otf"
+                                                        android:paddingLeft="8dp"
+                                                        android:paddingTop="5dp"
+                                                        android:paddingBottom="5dp"
+                                                        android:textStyle="bold"
+                                                        android:paddingRight="8dp"
+                                                        android:textSize="13dp"
+                                                        android:textColor="@color/white"/>
+
+
+                                                </android.support.v7.widget.CardView>
+                                                <ImageView
+                                                    android:layout_width="0dp"
+                                                    android:layout_marginLeft="0dp"
+                                                    android:layout_weight="20"
+                                                    android:paddingBottom="5dp"
+                                                    android:id="@+id/overvieww"
+                                                    android:paddingTop="5dp"
+                                                    android:paddingRight="3dp"
+                                                    android:paddingLeft="3dp"
+                                                    android:layout_height="45dp"
+                                                    android:src="@drawable/ic_info_analysis"/>
+                                            </LinearLayout>
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_weight="40"
+                                                android:layout_height="wrap_content">
+                                                <ImageView
+                                                    android:layout_width="30dp"
+                                                    android:layout_height="30dp"
+                                                    android:layout_centerVertical="true"
+                                                    android:id="@+id/modeImage"
+                                                    android:layout_marginRight="10dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:src="@drawable/ic_offline"
+                                                    />
+                                                <com.koonat.easyfont.TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Classroom"
+                                                    android:id="@+id/mode"
+                                                    android:paddingLeft="0dp"
+                                                    android:layout_centerVertical="true"
+                                                    android:paddingTop="3dp"
+                                                    app:font_path="fonts/Averta-Regular.otf"
+                                                    android:paddingBottom="3dp"
+                                                    android:textStyle="bold"
+                                                    android:paddingRight="5dp"
+                                                    android:layout_toLeftOf="@+id/modeImage"
+                                                    android:textSize="14dp"
+                                                    android:textColor="@color/black_landing"/>
+
+
+                                            </RelativeLayout>
+
+
+
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_below="@+id/middle_layoutt"
+                                            android:id="@+id/view33"
+                                            android:paddingBottom="10dp"
+                                            android:layout_height="wrap_content">
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="42"
+                                                android:layout_height="wrap_content">
+                                                <android.support.v7.widget.CardView
+                                                    android:layout_width="wrap_content"
+                                                    android:elevation="12dp"
+                                                    app:cardCornerRadius="3dp"
+                                                    app:cardElevation="5dp"
+                                                    android:layout_marginLeft="10dp"
+                                                    app:cardBackgroundColor="#88c540"
+                                                    android:layout_height="wrap_content">
+                                                    <com.koonat.easyfont.TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="APPLY"
+                                                        android:paddingTop="3dp"
+                                                        android:id="@+id/registerButtonn"
+                                                        android:paddingBottom="3dp"
+                                                        android:paddingLeft="10dp"
+                                                        android:textStyle="bold"
+                                                        android:paddingRight="10dp"
+                                                        app:font_path="fonts/Averta-Bold.otf"
+                                                        android:textSize="18dp"
+                                                        android:textColor="@color/white"/>
+
+
+                                                </android.support.v7.widget.CardView>
+                                                <ImageView
+                                                    android:layout_width="wrap_content"
+                                                    android:paddingBottom="5dp"
+                                                    android:visibility="gone"
+
+                                                    android:layout_marginLeft="10dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:src="@drawable/ic_view"/>
+
+                                            </LinearLayout>
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="58"
+                                                android:layout_height="wrap_content">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:id="@+id/rupeee"
+                                                    android:padding="2dp"
+                                                    android:visibility="gone"
+                                                    android:layout_marginBottom="1dp"
+                                                    android:layout_toLeftOf="@+id/cutratee"
+                                                    android:layout_marginTop="16dp"
+                                                    android:textSize="10dp"
+                                                    android:textColor="@color/black"
+                                                    android:text="@string/rupee"/>
+
+                                                <com.koonat.easyfont.TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:id="@+id/cutratee"
+                                                    android:text="12,480"
+                                                    android:visibility="gone"
+                                                    android:layout_marginTop="17dp"
+                                                    android:textColor="@color/black"
+                                                    android:gravity="bottom"
+                                                    app:font_path="fonts/Averta-Regular.otf"
+                                                    android:textSize="10dp"
+                                                    android:layout_toLeftOf="@+id/offpercentagee"
+                                                    android:background="@drawable/strike"
+                                                    />
+                                                <com.koonat.easyfont.TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:id="@+id/offpercentagee"
+                                                    android:text="(70% OFF)"
+                                                    android:visibility="gone"
+                                                    app:font_path="fonts/Averta-Regular.otf"
+                                                    android:paddingRight="3dp"
+                                                    android:paddingLeft="3dp"
+                                                    android:layout_marginTop="17dp"
+                                                    android:textColor="@color/black"
+                                                    android:gravity="center_vertical"
+                                                    android:textSize="10dp"
+                                                    android:layout_toLeftOf="@+id/rupee22"
+
+                                                    />
+
+                                                <com.koonat.easyfont.TextView
+                                                    android:id="@+id/rupee22"
+                                                    app:font_path="fonts/Averta-Regular.otf"
+                                                    android:layout_width="wrap_content"
+                                                    android:paddingBottom="3dp"
+                                                    android:visibility="gone"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentTop="true"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:padding="2dp"
+                                                    android:layout_toLeftOf="@+id/actualpricee"
+                                                    android:text="@string/rupee"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="26dp" />
+
+                                                <com.koonat.easyfont.TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentEnd="true"
+                                                    android:layout_alignParentTop="true"
+                                                    android:layout_marginEnd="8dp"
+                                                    app:font_path="fonts/Averta-Regular.otf"
+                                                    android:layout_alignParentRight="true"
+                                                    android:id="@+id/actualpricee"
+                                                    android:text="PAID"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="25dp" />
+
+
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView android:layout_width="match_parent"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/cardVieww"
+                            app:cardElevation="10dp"
+                            android:elevation="12dp"
+                            android:layout_marginLeft="3dp"
+                            app:cardBackgroundColor="@color/darkorangecourse"
+                            android:layout_marginRight="3dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            xmlns:android="http://schemas.android.com/apk/res/android">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:id="@+id/linearLayoutt"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="65"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+
+                                    android:layout_height="wrap_content">
+                                    <com.koonat.easyfont.TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:lineSpacingExtra="7dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="10dp"
+                                        android:padding="5dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/courseNamee"
+                                        android:text="IELTS - Basic Level"
+                                        android:textColor="@color/white"
+                                        android:textSize="20dp"
+                                        app:font_path="fonts/Averta-Semibold.otf" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="35"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_weight="50"
+                                        android:layout_marginLeft="18dp"
+                                        android:orientation="horizontal"
+                                        android:layout_height="wrap_content">
+
+                                        <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                                            android:id="@+id/likeButtonn"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            app:mfb_animate_favorite="true"
+                                            android:layout_marginBottom="-8dp"
+                                            app:mfb_animate_unfavorite="false"
+                                            app:mfb_padding="10"
+                                            android:layout_marginRight="-5dp"
+                                            android:layout_marginLeft="-10dp"
+                                            app:mfb_rotation_duration="400"
+                                            android:layout_marginTop="-5dp"
+                                            app:mfb_rotation_angle="360"
+                                            app:mfb_bounce_duration="300"
+                                            android:tint="@color/white"
+                                            app:mfb_color="@color/red"
+                                            app:mfb_type="heart" />
+
+                                        <com.koonat.easyfont.TextView
+                                            android:layout_width="wrap_content"
+                                            android:id="@+id/num_likess"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:text="3.2K"
+                                            android:textColor="@color/white"
+                                            android:textSize="16dp"
+                                            app:font_path="fonts/Averta-Semibold.otf" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_weight="50"
+                                        android:layout_marginLeft="20dp"
+                                        android:orientation="horizontal"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:layout_width="27dp"
+                                            android:layout_height="27dp"
+                                            android:padding="3dp"
+                                            android:src="@drawable/ic_duration"
+                                            />
+
+                                        <com.koonat.easyfont.TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/durationn"
+                                            android:layout_gravity="center_vertical"
+                                            android:text="40 hrs"
+                                            android:textColor="@color/white"
+                                            android:textSize="16dp"
+                                            app:font_path="fonts/Averta-Semibold.otf" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+
+
+                        </android.support.v7.widget.CardView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_width="match_parent"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/recommendedCourse2"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/recommendedCourse1"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        app:font_path="fonts/Averta-Semibold.otf"
+                        android:id="@+id/textlogic"
+                        android:padding="10dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black_landing"
+                        android:text="Based On Logical Score"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"/>
+                    <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textlogic"
+                        android:id="@+id/buy_course_layout"
+                        android:background="@color/white"
+                        xmlns:android="http://schemas.android.com/apk/res/android" >
+                        <android.support.v7.widget.CardView android:layout_width="match_parent"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_below="@+id/cardView"
+                            android:elevation="12dp"
+                            app:cardBackgroundColor="@color/white"
+                            android:layout_marginLeft="15dp"
+                            app:cardElevation="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="15dp"
+                            android:id="@+id/view2"
+                            android:layout_marginTop="-10dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_height="wrap_content"
+                            xmlns:android="http://schemas.android.com/apk/res/android">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:android="http://schemas.android.com/apk/res/android">
+                                    <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        xmlns:android="http://schemas.android.com/apk/res/android"
+                                        xmlns:app="http://schemas.android.com/apk/res-auto">
+                                        <LinearLayout android:layout_width="match_parent"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            android:padding="10dp"
+                                            android:id="@+id/view1"
+                                            android:layout_height="wrap_content"
+                                            xmlns:android="http://schemas.android.com/apk/res/android">
+                                            <com.koonat.easyfont.TextView
+                                                android:layout_weight="75"
+                                                android:id="@+id/university"
+                                                android:maxLines="1"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:text="Sharda University"
+                                                android:marqueeRepeatLimit="marquee_forever"
+                                                android:ellipsize="end"
+                                                android:textColor="@color/black"
+                                                android:textSize="21dp"
+                                                app:font_path="fonts/Averta-Regular.otf" />
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_weight="10"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_height="wrap_content">
+                                                <ImageView
+                                                    android:layout_width="30dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_height="30dp"
+                                                    android:src="@drawable/ic_star"/>
+                                            </RelativeLayout>
+                                            <com.koonat.easyfont.TextView
+                                                android:layout_weight="15"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:paddingTop="5dp"
+                                                android:id="@+id/ratingtext"
+                                                android:layout_gravity="left"
+                                                android:text="4.5"
+                                                android:paddingLeft="2dp"
+                                                android:textColor="@color/black_landing"
+                                                android:textSize="20dp"
+                                                app:font_path="fonts/Averta-Regular.otf" />
+
+
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:orientation="horizontal"
+                                            android:layout_below="@+id/view1"
+                                            android:id="@+id/middle_layout"
+                                            android:layout_height="wrap_content">
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="40"
+                                                android:layout_height="wrap_content">
+                                                <android.support.v7.widget.CardView
+                                                    android:layout_width="0dp"
+                                                    android:elevation="12dp"
+                                                    android:layout_weight="80"
+                                                    app:cardCornerRadius="5dp"
+                                                    android:layout_gravity="center_vertical"
+                                                    android:layout_marginLeft="10dp"
+                                                    app:cardBackgroundColor="#40ba87"
+                                                    android:layout_height="wrap_content">
+                                                    <com.koonat.easyfont.TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:maxLines="2"
+                                                        android:textAlignment="center"
+                                                        android:marqueeRepeatLimit="marquee_forever"
+                                                        android:ellipsize="end"
+                                                        android:id="@+id/courseShortName"
+                                                        android:text="Logical Reasoning"
+                                                        app:font_path="fonts/Averta-Semibold.otf"
+                                                        android:paddingLeft="8dp"
+                                                        android:paddingTop="5dp"
+                                                        android:paddingBottom="5dp"
+                                                        android:textStyle="bold"
+                                                        android:paddingRight="8dp"
+                                                        android:textSize="13dp"
+                                                        android:textColor="@color/white"/>
+
+
+                                                </android.support.v7.widget.CardView>
+                                                <ImageView
+                                                    android:layout_width="0dp"
+                                                    android:layout_marginLeft="0dp"
+                                                    android:layout_weight="20"
+                                                    android:paddingBottom="5dp"
+                                                    android:id="@+id/overview"
+                                                    android:paddingTop="5dp"
+                                                    android:paddingRight="3dp"
+                                                    android:paddingLeft="3dp"
+                                                    android:layout_height="45dp"
+                                                    android:src="@drawable/ic_info_analysis"/>
+                                            </LinearLayout>
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_weight="40"
+                                                android:layout_height="wrap_content">
+                                                <ImageView
+                                                    android:layout_width="30dp"
+                                                    android:layout_height="30dp"
+                                                    android:layout_centerVertical="true"
+                                                    android:id="@+id/modeImagee"
+                                                    android:layout_marginRight="10dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:src="@drawable/ic_offline"
+                                                    />
+                                                <com.koonat.easyfont.TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Classroom"
+                                                    android:id="@+id/modee"
+                                                    android:paddingLeft="0dp"
+                                                    android:layout_centerVertical="true"
+                                                    android:paddingTop="3dp"
+                                                    app:font_path="fonts/Averta-Regular.otf"
+                                                    android:paddingBottom="3dp"
+                                                    android:textStyle="bold"
+                                                    android:paddingRight="5dp"
+                                                    android:layout_toLeftOf="@+id/modeImagee"
+                                                    android:textSize="14dp"
+                                                    android:textColor="@color/black_landing"/>
+
+
+                                            </RelativeLayout>
+
+
+
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_below="@+id/middle_layout"
+                                            android:id="@+id/view"
+                                            android:paddingBottom="10dp"
+                                            android:layout_height="wrap_content">
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="42"
+                                                android:layout_height="wrap_content">
+                                                <android.support.v7.widget.CardView
+                                                    android:layout_width="wrap_content"
+                                                    android:elevation="12dp"
+                                                    app:cardCornerRadius="3dp"
+                                                    app:cardElevation="5dp"
+                                                    android:layout_marginLeft="10dp"
+                                                    app:cardBackgroundColor="#88c540"
+                                                    android:layout_height="wrap_content">
+                                                    <com.koonat.easyfont.TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="APPLY"
+                                                        android:paddingTop="3dp"
+                                                        android:id="@+id/registerButton"
+                                                        android:paddingBottom="3dp"
+                                                        android:paddingLeft="10dp"
+                                                        android:textStyle="bold"
+                                                        android:paddingRight="10dp"
+                                                        app:font_path="fonts/Averta-Bold.otf"
+                                                        android:textSize="18dp"
+                                                        android:textColor="@color/white"/>
+
+
+                                                </android.support.v7.widget.CardView>
+                                                <ImageView
+                                                    android:layout_width="wrap_content"
+                                                    android:paddingBottom="5dp"
+                                                    android:visibility="gone"
+
+                                                    android:layout_marginLeft="10dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:src="@drawable/ic_view"/>
+
+                                            </LinearLayout>
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="58"
+                                                android:layout_height="wrap_content">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:id="@+id/rupee"
+                                                    android:padding="2dp"
+                                                    android:visibility="gone"
+                                                    android:layout_marginBottom="1dp"
+                                                    android:layout_toLeftOf="@+id/cutrate"
+                                                    android:layout_marginTop="16dp"
+                                                    android:textSize="10dp"
+                                                    android:textColor="@color/black"
+                                                    android:text="@string/rupee"/>
+
+                                                <com.koonat.easyfont.TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:id="@+id/cutrate"
+                                                    android:text="12,480"
+                                                    android:layout_marginTop="17dp"
+                                                    android:textColor="@color/black"
+                                                    android:gravity="bottom"
+                                                    android:visibility="gone"
+                                                    app:font_path="fonts/Averta-Regular.otf"
+                                                    android:textSize="10dp"
+                                                    android:layout_toLeftOf="@+id/offpercentage"
+                                                    android:background="@drawable/strike"
+                                                    />
+                                                <com.koonat.easyfont.TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:id="@+id/offpercentage"
+                                                    android:text="(70% OFF)"
+                                                    android:visibility="gone"
+                                                    app:font_path="fonts/Averta-Regular.otf"
+                                                    android:paddingRight="3dp"
+                                                    android:paddingLeft="3dp"
+                                                    android:layout_marginTop="17dp"
+                                                    android:textColor="@color/black"
+                                                    android:gravity="center_vertical"
+                                                    android:textSize="10dp"
+                                                    android:layout_toLeftOf="@+id/rupee2"
+
+                                                    />
+
+                                                <com.koonat.easyfont.TextView
+                                                    android:id="@+id/rupee2"
+                                                    app:font_path="fonts/Averta-Regular.otf"
+                                                    android:layout_width="wrap_content"
+                                                    android:paddingBottom="3dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentTop="true"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:padding="2dp"
+                                                    android:visibility="gone"
+                                                    android:layout_toLeftOf="@+id/actualprice"
+                                                    android:text="@string/rupee"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="26dp" />
+
+                                                <com.koonat.easyfont.TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentEnd="true"
+                                                    android:layout_alignParentTop="true"
+                                                    android:layout_marginEnd="8dp"
+                                                    app:font_path="fonts/Averta-Regular.otf"
+                                                    android:layout_alignParentRight="true"
+                                                    android:id="@+id/actualprice"
+                                                    android:text="PAID"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="25dp" />
+
+
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView android:layout_width="match_parent"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/cardView"
+                            app:cardElevation="10dp"
+                            android:elevation="12dp"
+                            android:layout_marginLeft="3dp"
+                            app:cardBackgroundColor="@color/darkorangecourse"
+                            android:layout_marginRight="3dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            xmlns:android="http://schemas.android.com/apk/res/android">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:id="@+id/linearLayout"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="65"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+
+                                    android:layout_height="wrap_content">
+                                    <com.koonat.easyfont.TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:lineSpacingExtra="7dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="10dp"
+                                        android:padding="5dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/course_namee"
+                                        android:text="Learning Python for Data Analysis and Visualization"
+                                        android:textColor="@color/white"
+                                        android:textSize="20dp"
+                                        app:font_path="fonts/Averta-Semibold.otf" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="35"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_weight="50"
+                                        android:layout_marginLeft="18dp"
+                                        android:orientation="horizontal"
+                                        android:layout_height="wrap_content">
+
+                                        <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                                            android:id="@+id/likeButton"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            app:mfb_animate_favorite="true"
+                                            android:layout_marginBottom="-8dp"
+                                            app:mfb_animate_unfavorite="false"
+                                            app:mfb_padding="10"
+                                            android:layout_marginRight="-5dp"
+                                            android:layout_marginLeft="-10dp"
+                                            app:mfb_rotation_duration="400"
+                                            android:layout_marginTop="-5dp"
+                                            app:mfb_rotation_angle="360"
+                                            app:mfb_bounce_duration="300"
+                                            android:tint="@color/white"
+                                            app:mfb_color="@color/red"
+                                            app:mfb_type="heart" />
+
+                                        <com.koonat.easyfont.TextView
+                                            android:layout_width="wrap_content"
+                                            android:id="@+id/num_likes"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:text="3.2K"
+                                            android:textColor="@color/white"
+                                            android:textSize="16dp"
+                                            app:font_path="fonts/Averta-Semibold.otf" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_weight="50"
+                                        android:layout_marginLeft="20dp"
+                                        android:orientation="horizontal"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:layout_width="27dp"
+                                            android:layout_height="27dp"
+                                            android:padding="3dp"
+                                            android:src="@drawable/ic_duration"
+                                            />
+
+                                        <com.koonat.easyfont.TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/duration"
+                                            android:layout_gravity="center_vertical"
+                                            android:text="40 hrs"
+                                            android:textColor="@color/white"
+                                            android:textSize="16dp"
+                                            app:font_path="fonts/Averta-Semibold.otf" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+
+
+                        </android.support.v7.widget.CardView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_below="@+id/recommendedCourse2">
+
+                <RelativeLayout
+                    android:id="@+id/disclaimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        app:font_path="fonts/Roboto-Medium.ttf"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disclaimer_general"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize2" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/disclaimer"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:id="@+id/feedback"
+                    app:cardBackgroundColor="@color/filter_blue"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <com.koonat.easyfont.TextView
+                        app:font_path="fonts/Roboto-Medium.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="VIEW CAREER REPORT"
+                        android:textColor="@color/white"/>
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/apply_head"
+        app:borderWidth="0dp"
+        android:background="@color/apply_head"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_course"
+        android:elevation="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        />
+</RelativeLayout>

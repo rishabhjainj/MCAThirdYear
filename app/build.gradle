@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        disable 'RestrictedApi'
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    compileSdkVersion 28
+    dexOptions {
+        jumboMode = true
+        javaMaxHeapSize "4g"
+    }
+    defaultConfig {
+        applicationId "com.AbhiDev.edurecomm"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+
+    })
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
+    compile 'com.android.support:design:26.0.2'
+    compile 'com.github.bassaer:chatmessageview:1.11.0'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+//    compile 'com.github.baoyachi:StepView:1.9'
+    compile 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+    compile 'com.github.Mariovc:ImagePicker:1.1.1'
+    compile 'com.github.chathuralakmal:AndroidImagePopup:1.0.7'
+    compile 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.github.baoyachi:StepView:1.9'
+    compile 'com.github.GwonHyeok:StickySwitch:0.0.15'
+    compile 'com.android.support:support-v4:26.0.2'
+    compile 'com.squareup.picasso:picasso:2.71828'
+    compile 'io.github.kexanie.library:MathView:0.0.6'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.facebook.fresco:fresco:0.6.1'
+    compile('ai.api:libai:1.4.8') {
+        exclude module: 'log4j-core'
+    }
+    compile 'ai.api:sdk:2.0.5@aar'
+    compile 'commons-io:commons-io:2.4'
+    compile 'uk.co.chrisjenx:calligraphy:2.3.0'
+    compile 'com.github.clans:fab:1.6.4'
+    compile 'com.github.medyo:fancybuttons:1.8.4'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.10'
+    compile 'com.aurelhubert:ahbottomnavigation:2.1.0'
+    compile 'com.basgeekball:awesome-validation:1.3'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'de.hdodenhof:circleimageview:1.2.1'
+    compile 'com.github.ivbaranov:materialfavoritebutton:0.1.2'
+    compile 'com.android.support:appcompat-v7:26.0.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.jpardogo.materialtabstrip:library:1.1.0'
+    compile 'devs.mulham.horizontalcalendar:horizontalcalendar:1.3.4'
+    compile 'com.kofigyan.stateprogressbar:stateprogressbar:0.0.6'
+    compile 'com.google.firebase:firebase-auth:11.8.0'
+    compile 'com.github.krtkush:LinearTimer:v2.1.1'
+    compile 'com.miguelcatalan:materialsearchview:1.4.0'
+    compile 'com.google.firebase:firebase-messaging:11.8.0'
+    compile 'com.google.firebase:firebase-core:11.8.0'
+    compile 'com.google.android.gms:play-services-auth:11.8.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    compile 'link.fls:swipestack:0.3.0'
+    compile 'com.xw.repo:bubbleseekbar:3.4'
+    compile 'com.roughike:swipe-selector:1.0.6'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'com.github.aakira:expandable-layout:1.6.0@aar'
+    compile 'com.airbnb.android:lottie:2.5.0-rc1'
+    compile 'com.yarolegovich:lovely-dialog:1.1.0'
+    compile 'com.github.amarjain07:StickyScrollView:1.0.2'
+    compile 'com.github.natiginfo:EasyFont:v1.0.6'
+    compile 'com.github.amlcurran.showcaseview:library:5.4.3'
+    compile 'us.belka:androidtoggleswitch:1.2.2'
+    compile 'com.android.support:recyclerview-v7:26.0.2'
+    compile 'com.github.techery:properratingbar:+'
+    compile 'com.mindorks.android:placeholderview:1.0.3'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.mindorks.android:placeholderview-compiler:1.0.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix"
+    android:background="@drawable/bg_game4"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:id="@+id/relative"
+            android:gravity="center"
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gameOver"
+                android:text="WELL PLAYED!!"
+                android:textSize="40dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                fontPath="fonts/Montserrat-Bold.ttf"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You answered 4 questions correctly and 3 incorrectly!"
+                android:layout_below="@+id/gameOver"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+
+                android:id="@+id/result"
+
+                 />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal"
+                android:background="@color/white"
+                android:text="Game2"
+                android:layout_below="@+id/result"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:paddingTop="7dp"
+                android:id="@+id/button_next"
+
+
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.TedTalksActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_layout"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:padding="3dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/backbtn"
+                    android:src="@drawable/back_button_course"
+                    />
+                <com.koonat.easyfont.TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/backbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exams"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:id="@+id/tooltilte"
+                    android:textSize="25dp"
+                    android:textColor="@color/black_landing"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="18dp"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="13dp"
+                    android:layout_marginRight="-20dp"
+                    android:id="@+id/filter_search"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_filter_act"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/bg_banner"
+        android:layout_below="@+id/app_bar_layout"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:layout_height="140dp"
+        android:src="@drawable/cover_exam"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <com.koonat.easyfont.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            app:textAllCaps="true"
+            android:text="CAT"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:id="@+id/subject_text"
+            app:font_path="fonts/Averta-Bold.otf"/>
+        <com.koonat.easyfont.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_below="@+id/subject_text"
+            android:paddingBottom="10dp"
+            android:maxLines="2"
+            android:textAllCaps="true"
+            app:textAllCaps="true"
+            android:id="@+id/textmock"
+            android:text="Mock tests to sharpen your skills!"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:font_path="fonts/Averta-Regular.otf"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginTop="0dp"
+            android:id="@+id/tag_recyclerview"
+            android:layout_below="@+id/textmock"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <com.koonat.easyfont.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bg_banner"
+        android:id="@+id/textview"
+        android:textSize="16dp"
+        android:textColor="@color/black_landing"
+        android:textAlignment="center"
+        app:font_path="fonts/Averta-Regular.otf"
+        android:text="Let's get started. Select any test paper set."
+        android:layout_marginBottom="10dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/career_recyclerview"
+        android:layout_marginBottom="10dp"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        android:layout_marginLeft="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>

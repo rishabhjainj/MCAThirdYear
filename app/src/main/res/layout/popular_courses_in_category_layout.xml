@@ -1,0 +1,66 @@
+
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/college_course_layout"
+    android:layout_below="@+id/buy_course_layout_2"
+    app:cardElevation="10dp"
+    android:elevation="12dp"
+    android:layout_marginLeft="15dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginBottom="4dp"
+    android:layout_marginRight="15dp"
+    app:cardCornerRadius="10dp"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/white">
+
+
+        <com.koonat.easyfont.TextView
+            android:id="@+id/career_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular Courses"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"
+
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            app:font_path="fonts/Roboto-Light.ttf"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/career_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="VIEW ALL"
+            android:textColor="#00A0E7"
+            android:textSize="12sp"
+            android:id="@+id/view_all_courses"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/popular_courses_recyclerView"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/career_text"
+            android:layout_marginTop="5dp" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

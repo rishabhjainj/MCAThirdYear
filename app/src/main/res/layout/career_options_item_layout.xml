@@ -1,0 +1,30 @@
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="12dp"
+    android:layout_marginLeft="10dp"
+    app:cardElevation="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="#F26A24"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearLayout"
+        android:layout_height="100dp">
+        <com.koonat.easyfont.TextView
+            android:layout_width="match_parent"
+            android:id="@+id/subject_text"
+            android:text="Data Mining"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            app:font_path="fonts/Roboto-Bold.ttf"
+            />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

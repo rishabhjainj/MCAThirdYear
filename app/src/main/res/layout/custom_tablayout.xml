@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:theme="@style/xyz"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/logo"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:layout_toLeftOf="@+id/phone"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:textStyle="bold"
+                app:font_path="fonts/Roboto-Regular.ttf"
+                android:text="Tomorrow4You"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:tint="@color/purple"
+
+                android:layout_centerVertical="true"
+                android:layout_height="35dp"
+                android:layout_toLeftOf="@+id/notification_top"
+                android:src="@drawable/ic_helpdesk"
+                />
+            <ImageView
+                android:id="@+id/notification_top"
+                android:layout_width="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:layout_marginRight="-5dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_notification"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

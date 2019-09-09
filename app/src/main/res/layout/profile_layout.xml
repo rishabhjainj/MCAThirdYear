@@ -1,0 +1,439 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_marginTop="0dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:paddingRight="5dp"
+        android:layout_height="30dp"
+        android:background="@color/green500"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:tint="@color/white"
+        android:src="@drawable/share_random"/>
+    <com.koonat.easyfont.TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:id="@+id/name"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        app:font_path="fonts/Averta-Bold.otf"
+        android:text="User"/>
+    <com.koonat.easyfont.TextView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black_landing"
+        android:layout_below="@id/name"
+        android:id="@+id/profile_name"
+        android:textAlignment="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        app:font_path="fonts/Averta-Regular.otf"
+        android:text=""/>
+
+    <android.support.v7.widget.CardView android:layout_width="130dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/view1"
+        android:layout_below="@id/profile_name"
+        app:cardElevation="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="0dp"
+        app:cardBackgroundColor="@color/grey"
+        app:cardCornerRadius="70dp"
+        android:layout_height="130dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_profile_new"
+            android:id="@+id/profile_Image"/>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="160dp"
+        android:weightSum="99"
+        android:layout_gravity="top"
+        android:id="@+id/dummies"
+        android:elevation="50dp"
+        android:foregroundGravity="top"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="33"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:paddingRight="5dp"
+                android:layout_marginTop="22dp"
+                android:paddingLeft="5dp"
+                android:layout_marginBottom="-15dp"
+                android:layout_height="112dp"
+                android:src="@drawable/ic_strategist_m"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_top_corners"
+                android:layout_marginTop="0dp"
+                android:layout_height="50dp">
+                <com.koonat.easyfont.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:paddingTop="2dp"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:text="Strategist"
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="33"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:paddingRight="5dp"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="5dp"
+                android:layout_marginBottom="-15dp"
+                android:layout_height="112dp"
+                android:src="@drawable/ic_visionary_m"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_top_purple"
+                android:layout_weight="33"
+                android:layout_height="70dp">
+
+                <com.koonat.easyfont.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:textSize="12dp"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:text="Visionary"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="33"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:paddingRight="5dp"
+                android:layout_marginTop="32dp"
+                android:paddingLeft="5dp"
+                android:layout_marginBottom="-15dp"
+                android:layout_height="112dp"
+                android:src="@drawable/ic_dreamer_m"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_top_green"
+                android:layout_marginTop="0dp"
+                android:layout_weight="33"
+                android:layout_height="40dp">
+
+                <com.koonat.easyfont.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:textSize="12dp"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:text="Dreamer"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/tags"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/dummies"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_grey_bg"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_star"/>
+                <com.koonat.easyfont.TextView
+                    android:layout_toRightOf="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:text="CREATIVE"
+                    android:textSize="10dp"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_grey_bg"
+                android:layout_marginTop="0dp"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_star"/>
+                <com.koonat.easyfont.TextView
+                    android:layout_toRightOf="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:text="ORIGINAL"
+                    android:ellipsize="end"
+                    android:textSize="10dp"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:maxLines="1"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_grey_bg"
+                android:layout_marginTop="0dp"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_star"/>
+                <com.koonat.easyfont.TextView
+                    android:layout_toRightOf="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:text="CONCEPTUAL"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:ellipsize="end"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:maxLines="1"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_grey_bg"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/apply_btn"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/star"
+                    android:src="@drawable/ic_star"/>
+                <com.koonat.easyfont.TextView
+                    android:layout_toRightOf="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:text="INNOVATIVE"
+                    android:textSize="10dp"
+                    android:ellipsize="end"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:maxLines="1"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_grey_bg"
+                android:layout_marginTop="0dp"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_star"/>
+                <com.koonat.easyfont.TextView
+                    android:layout_toRightOf="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:text="BIG-PICTURE"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_grey_bg"
+                android:layout_marginTop="0dp"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_star"/>
+                <com.koonat.easyfont.TextView
+                    android:layout_toRightOf="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="10dp"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:text="DICOVERER"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/tags"
+        android:layout_width="match_parent"
+        android:id="@+id/accuracy"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <com.koonat.easyfont.TextView
+            android:layout_width="wrap_content"
+            android:textSize="12dp"
+            android:layout_marginTop="-5dp"
+            android:padding="10dp"
+            app:font_path="fonts/Averta-Regular.otf"
+            android:textColor="@color/black_alpha_40"
+            android:text="Profile Accuracy : 45%"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/help"
+            android:layout_gravity="center_vertical"
+            android:tint="@color/grey"
+            android:src="@drawable/ic_quest"/>
+    </LinearLayout>
+    <android.support.v7.widget.CardView android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardElevation="10dp"
+        android:layout_below="@id/accuracy"
+        android:elevation="0dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        app:cardBackgroundColor="@color/filter_blue"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.koonat.easyfont.TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:paddingBottom="10dp"
+        android:id="@+id/viewinsights"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/filter_blue"
+        app:font_path="fonts/Averta-Regular.otf"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:layout_height="wrap_content"
+        android:text="View Your Insights"/>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+</ScrollView>

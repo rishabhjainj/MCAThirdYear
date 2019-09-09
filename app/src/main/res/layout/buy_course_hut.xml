@@ -1,0 +1,154 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/course_popularity_layout"
+    android:id="@+id/buy_course_layout"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <android.support.v7.widget.CardView android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_below="@+id/view1"
+        android:elevation="12dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginLeft="10dp"
+        app:cardElevation="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/view2"
+        android:layout_marginTop="-10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <include layout="@layout/buy_course_bottom_ui"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/view1"
+        app:cardElevation="10dp"
+        android:elevation="12dp"
+        app:cardBackgroundColor="@color/darkorangecourse"
+        app:cardCornerRadius="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="65"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+
+                android:layout_height="wrap_content">
+                <com.koonat.easyfont.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="7dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/course_tagLine"
+                    android:text="Learning Python for Data Analysis and Visualization"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    app:font_path="fonts/Averta-Semibold.otf" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:layout_weight="35"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_weight="50"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                        android:id="@+id/likeButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:mfb_animate_favorite="true"
+                        android:layout_marginBottom="-8dp"
+                        app:mfb_animate_unfavorite="false"
+                        app:mfb_padding="10"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginLeft="-10dp"
+                        app:mfb_rotation_duration="400"
+                        android:layout_marginTop="-5dp"
+                        app:mfb_rotation_angle="360"
+                        app:mfb_bounce_duration="300"
+                        android:tint="@color/white"
+                        app:mfb_color="@color/red"
+                        app:mfb_type="heart" />
+
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/num_likes"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="3.2K"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:font_path="fonts/Averta-Semibold.otf" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_weight="50"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_duration"
+                        />
+
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/duration"
+                        android:layout_gravity="center_vertical"
+                        android:text="10 hrs"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:font_path="fonts/Averta-Semibold.otf" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

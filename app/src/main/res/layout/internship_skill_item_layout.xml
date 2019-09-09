@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.koonat.easyfont.TextView
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/skilltext"
+        android:layout_height="wrap_content"
+        android:text="JSP"
+        android:background="@drawable/rounded_grey_bg"
+        android:textAlignment="center"
+        android:textColor="#88898c"
+        android:textSize="12dp"
+        app:font_path="fonts/Averta-Regular.otf" />
+</RelativeLayout>

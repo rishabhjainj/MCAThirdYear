@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.github.bassaer.chatmessageview.view.ChatView
+        android:id="@+id/chat_view"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="0dp"
+        android:layout_height="match_parent"/>
+        <ai.api.ui.AIButton
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/mic_new"
+            android:id="@+id/micButton"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/chat_view"/>
+    </RelativeLayout>
+
+</LinearLayout>

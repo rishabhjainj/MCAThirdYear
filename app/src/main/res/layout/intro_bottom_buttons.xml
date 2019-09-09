@@ -1,0 +1,56 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="35dp"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <com.koonat.easyfont.Button
+            android:id="@+id/skip"
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp"
+            app:font_path="fonts/Averta-Bold.otf"
+            android:background="@drawable/rounded_rectangle_green_question"
+            android:text="SKIP"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+
+        >
+        <com.koonat.easyfont.Button
+            android:id="@+id/start"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:font_path="fonts/Averta-Bold.otf"
+            android:layout_marginRight="35dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_rectangle_green_question"
+            android:text="START"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

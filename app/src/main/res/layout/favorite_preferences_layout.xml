@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/history_n_goals_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/stepper"
+        android:layout_below="@+id/actionbar"
+        android:layout_height="50dp">
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:id="@+id/progress_1"
+            android:layout_weight="90"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="0dp"
+
+            app:rcBackgroundPadding="2dp"
+            app:rcIconSize="50dp"
+            app:rcIconPadding="5dp" />
+        <ImageView
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/ic_historygoals"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/stepper"
+        android:padding="30dp"
+        android:layout_marginBottom="60dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:background="@drawable/analysis_background"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerCrop"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="20dp"
+
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_info_bulb"
+                    android:id="@+id/imageView5" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblue"
+                    android:textSize="20dp"
+                    android:id="@+id/filldetails"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_marginTop="11dp"
+                    android:gravity="center"
+                    android:text="Enter Your Preferences"
+                    android:layout_alignTop="@+id/imageView5"
+                    android:layout_centerHorizontal="true" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/filldetails"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:paddingTop="10dp"
+                    android:weightSum="1">
+                    <!-- Name Label -->
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Your Area of Interest"
+                        android:textColor="@color/darkblue"
+                        android:textSize="@dimen/textSize" />
+//change to multiselect
+                    <com.wireout.common.MultiSelectSpinner
+                        android:id="@+id/spinner1"
+                        android:padding="10dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Your Favorite High School Subject"
+
+                        android:textColor="@color/darkblue"
+                        android:textSize="@dimen/textSize" />
+
+                    <com.wireout.common.MultiSelectSpinner
+                        android:id="@+id/spinner"
+                        android:layout_width="fill_parent"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Your Favorite Past Time"
+                        android:textColor="@color/darkblue"
+                        android:textSize="@dimen/textSize" />
+
+                    <com.wireout.common.MultiSelectSpinner
+                        android:id="@+id/spinner3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_centerHorizontal="true" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Your Favorite Game Category"
+                        android:textColor="@color/darkblue"
+                        android:textSize="@dimen/textSize" />
+
+                    <com.wireout.common.MultiSelectSpinner
+                        android:id="@+id/spinner2"
+                        android:padding="10dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:id="@+id/opt1"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:layout_below="@id/options"-->
+                <!--android:background="@drawable/rectangle"-->
+                <!--android:padding="10dp"-->
+                <!--&gt;-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text="Universal force of attraction by which all physical bodies attract each other."/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:id="@+id/opt2"-->
+
+                <!--android:layout_margin="10dp"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:layout_below="@id/opt1"-->
+                <!--android:background="@drawable/rectangle"-->
+                <!--android:padding="10dp"-->
+                <!--&gt;-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text="Universal force of attraction by which all physical bodies attract each other."/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:id="@+id/opt3"-->
+                <!--android:layout_below="@id/opt2"-->
+                <!--android:background="@drawable/rectangle"-->
+                <!--android:padding="10dp"-->
+                <!--&gt;-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/textView3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Universal force of attraction by which all physical bodies attract each other."-->
+                <!--android:textColor="@color/black" />-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:id="@+id/opt4"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:layout_below="@id/opt3"-->
+                <!--android:background="@drawable/rectangle"-->
+                <!--android:padding="10dp"-->
+                <!--&gt;-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text="Universal force of aattraction by which all physical bodies attract each other."/>-->
+                <!--</LinearLayout>-->
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+    <include layout="@layout/bottom_buttons"></include>
+</RelativeLayout>

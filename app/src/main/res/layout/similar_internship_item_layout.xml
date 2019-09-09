@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="190dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="80dp"
+        android:id="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_adobe_logo"
+        />
+    <com.koonat.easyfont.TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/post"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/img"
+        app:font_path="fonts/Averta-Regular.otf"
+        android:text="Web Developer"
+        android:textColor="@color/black_landing"
+        android:textSize="18dp"
+        />
+    <com.koonat.easyfont.TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/company"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/post"
+        app:font_path="fonts/Averta-Regular.otf"
+        android:text="Abode India"
+        android:textColor="#1F2E35"
+        android:textSize="16dp"
+        />
+    <com.koonat.easyfont.TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/company"
+        app:font_path="fonts/Averta-Regular.otf"
+        android:text="New Delhi"
+        android:textColor="#1F2E35"
+        android:textSize="14dp"
+        />
+    <View
+        android:layout_width="2dp"
+        android:background="@color/light_grey"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        ></View>
+
+
+
+</RelativeLayout>

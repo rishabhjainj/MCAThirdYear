@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/history_n_goals_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/stepper"
+        android:layout_below="@+id/actionbar"
+        android:layout_height="50dp">
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:id="@+id/progress_1"
+            android:layout_weight="90"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="0dp"
+
+            app:rcBackgroundPadding="2dp"
+            app:rcIconSize="50dp"
+            app:rcIconPadding="5dp" />
+        <ImageView
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/ic_historygoals"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/stepper"
+        android:padding="30dp"
+        android:layout_marginBottom="60dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:background="@drawable/analysis_background"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="20dp"
+
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView5"
+                    android:src="@drawable/ic_info_bulb" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblue"
+                    android:textSize="20dp"
+                    android:id="@+id/filldetails"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_marginTop="11dp"
+                    android:gravity="center"
+                    android:text="Professional Certification"
+                    android:layout_alignTop="@+id/imageView5"
+                    android:layout_centerHorizontal="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="60dp"
+                    android:orientation="vertical"
+                    android:id="@+id/mainRelativeLayout"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/addViewsHere"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="24dp"
+                            android:paddingRight="24dp"
+                            android:paddingTop="10dp"
+                            xmlns:android="http://schemas.android.com/apk/res/android">
+                            <!-- Name Label -->
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="20dp"
+                                android:text="Name of The Institution"
+                                android:textColor="@color/darkblue"
+                                android:textSize="@dimen/textSize" />
+
+
+                            <EditText
+                                android:id="@+id/college1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:textColorLink="@color/darkblue"
+                                android:textSize="@dimen/textSize" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="Course"
+                                    android:textColor="@color/darkblue"
+                                    android:textSize="@dimen/textSize" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/course1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColorLink="@color/darkblue"
+                                    android:textSize="@dimen/textSize" />
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView17"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="Year Of Passing"
+                                    android:textColor="@color/darkblue"
+                                    android:textSize="@dimen/textSize" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/passyear1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="date"
+                                    android:textColorLink="@color/darkblue"
+                                    android:textSize="@dimen/textSize" />
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="Marks Obtained"
+                                    android:textColor="@color/darkblue"
+                                    android:textSize="@dimen/textSize" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/marks1"
+                                    android:layout_weight="30"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="date"
+                                    android:textColorLink="@color/darkblue"
+                                    android:textSize="@dimen/textSize" />
+
+                                <Spinner
+                                    android:id="@+id/marksSpinner"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="50"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="20dp"
+                                    />
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/darkblue"
+                                />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        android:layout_below="@+id/mainRelativeLayout"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:background="@color/grey"
+                            android:id="@+id/add"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/addimage"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="10dp"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:layout_marginTop="18dp"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/plus"/>
+
+                            <TextView
+                                android:id="@+id/textView18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginTop="20dp"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:text="ADD ANOTHER RECORD" />
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+    <include layout="@layout/bottom_buttons"></include>
+
+</RelativeLayout>

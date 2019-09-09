@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="195dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="15dp"
+    app:cardElevation="5dp"
+    android:background="@color/white"
+    android:clickable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:id="@+id/imageSuccess"
+            android:background="@color/cardview_dark_background"/>
+
+        <com.koonat.easyfont.TextView
+            android:id="@+id/tvSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageSuccess"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="3"
+            app:font_path="fonts/Roboto-Light.ttf"
+            android:text="The Vice President Of India Interacted with the saffaslfajsdfafjalsdfStu"
+            android:textColor="@color/black"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

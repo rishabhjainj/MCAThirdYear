@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/red500"
+                app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Result"
+                        android:id="@+id/tooltilte"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="20dp"
+                        android:layout_marginTop="18dp"
+                        android:textColor="@color/white"
+                        />
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:background="?attr/selectableItemBackground"-->
+                    <!--android:padding="13dp"-->
+                    <!--android:id="@+id/cart"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@mipmap/ic_cart"/>-->
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <LinearLayout android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red500"
+            android:orientation="horizontal"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:id="@+id/name"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="3dp"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/stopwatch2"/>
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:font_path="fonts/Roboto-Medium.ttf"
+                        android:text="45 Minutes"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="3dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/exam"/>
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:font_path="fonts/Roboto-Medium.ttf"
+                        android:text="20 Questions"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="3dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/righttick"/>
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:font_path="fonts/Roboto-Medium.ttf"
+                        android:text="10 Correct "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="3dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/brain_wrong"/>
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:font_path="fonts/Roboto-Medium.ttf"
+                        android:text="0 Incorrect"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="3dp"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/score"/>
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:font_path="fonts/Roboto-Medium.ttf"
+                        android:text="10 Marks"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chart"
+                android:layout_marginLeft="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="200dp" />
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/red500"
+                android:gravity="right"
+                android:layout_below="@+id/chart"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#FF6600"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="10dp" />
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Correct"
+                        android:paddingLeft="2dp"
+                        android:layout_below="@+id/wiki_title"
+                        app:font_path="fonts/Roboto-Regular.ttf"
+                        android:textStyle="bold"
+                        android:textSize="9dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="5dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="0dp"
+                        android:background="#C12552"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="10dp" />
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Incorrect"
+                        android:paddingLeft="2dp"
+                        android:layout_below="@+id/wiki_title"
+                        app:font_path="fonts/Roboto-Regular.ttf"
+                        android:textStyle="bold"
+                        android:textSize="9dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="5dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="0dp"
+                        android:background="#6A961F"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="10dp" />
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Not Attempted"
+                        android:paddingLeft="2dp"
+                        android:layout_below="@+id/wiki_title"
+                        app:font_path="fonts/Roboto-Regular.ttf"
+                        android:textStyle="bold"
+                        android:textSize="9dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="5dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="0dp"
+                        android:background="#F5C700"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="10dp" />
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Dropout"
+                        android:paddingLeft="2dp"
+                        android:layout_below="@+id/wiki_title"
+                        app:font_path="fonts/Roboto-Regular.ttf"
+                        android:textStyle="bold"
+                        android:textSize="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recyclerview"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</ScrollView>

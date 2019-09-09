@@ -1,0 +1,65 @@
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_below="@+id/ted_talks_layout"
+    android:id="@+id/trending_layout"
+    android:layout_marginBottom="1dp"
+    android:elevation="3dp"
+    android:layout_marginTop="1dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+       >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/trend_image"
+            android:src="@drawable/lightnings"
+            />
+
+        <com.koonat.easyfont.TextView
+            android:id="@+id/university_text"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/trend_image"
+            android:layout_height="wrap_content"
+            android:text="Trending Articles"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black_landing"
+            android:layout_marginBottom="5dp"
+            app:font_path="fonts/Roboto-Light.ttf"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/university_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="VIEW ALL"
+            android:textColor="#00A0E7"
+            android:textSize="12sp"
+            android:id="@+id/view_all_trending"
+            android:textStyle="bold" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/trending_recyclerview"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/university_text"
+            android:layout_marginTop="5dp" />
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

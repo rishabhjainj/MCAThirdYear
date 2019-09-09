@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    <include layout="@layout/result_pie_chart_layout"/>
+    <include layout="@layout/result_data_card"
+        ></include>
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:elevation="12dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_layout"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:padding="3dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/backbtn"
+                    android:src="@drawable/back_button_course"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RESULT AND ANALYSIS"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tooltilte"
+                    android:textSize="18dp"
+                    android:layout_marginTop="18dp"
+                    android:textColor="@color/black_landing"
+                    />
+
+
+                <ImageView
+                android:layout_width="50dp"
+                android:layout_alignParentRight="true"
+                android:background="?attr/selectableItemBackground"
+                android:padding="13dp"
+                android:id="@+id/cart"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_resultfilter"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/answer_analysis_layout"
+        ></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/question_wise_text"
+        android:layout_below="@+id/analysis_layout"
+        android:layout_height="wrap_content">
+
+        <com.koonat.easyfont.TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:textSize="12dp"
+            android:textColor="@color/black_landing"
+            android:paddingTop="10dp"
+            app:font_path="fonts/Averta-Regular.otf"
+            android:text="Click on the button to view explanation."
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/recyclerview"
+        android:layout_below="@+id/question_wise_text"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:auto="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/red500"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Details"
+                    android:id="@+id/tooltilte"
+                    android:textSize="20dp"
+                    android:layout_marginTop="18dp"
+                    android:textColor="@color/white"
+                    />
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:background="?attr/selectableItemBackground"-->
+                <!--android:padding="13dp"-->
+                <!--android:id="@+id/cart"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@mipmap/ic_cart"/>-->
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:auto="http://schemas.android.com/tools"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <com.koonat.easyfont.TextView
+                android:layout_width="0dp"
+                android:id="@+id/questno"
+                app:font_path="fonts/Averta-Bold.otf"
+                android:padding="5dp"
+                android:textColor="@color/red"
+                android:layout_weight="15"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:textSize="20dp"
+                android:text="Q1"/>
+            <com.koonat.easyfont.TextView
+                android:textSize="18dp"
+                android:layout_marginTop="0dp"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/question"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:layout_weight="75"
+                android:padding="10dp"
+                auto:text="The effective stress friction angle of a saturated, cohesionless soil is 45."
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:src="@drawable/ic_action_rightarrow"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="30dp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/choices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/quest"
+            android:layout_below="@+id/quest"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/rb1"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize" />
+                <com.koonat.easyfont.TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/textSize"
+                    android:id="@+id/option1"
+                    android:textColor="@color/black"
+                    android:padding="3dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=""
+                    android:clickable="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize" />
+                <com.koonat.easyfont.TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/textSize"
+                    android:id="@+id/option2"
+                    android:textColor="@color/black"
+                    android:padding="3dp"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/rb3"
+                    android:layout_width="wrap_content"
+                    android:clickable="false"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize" />
+                <com.koonat.easyfont.TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/textSize"
+                    android:id="@+id/option3"
+                    android:textColor="@color/black"
+                    android:padding="3dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/rb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=""
+                    android:clickable="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize" />
+                <com.koonat.easyfont.TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/textSize"
+                    android:id="@+id/option4"
+                    android:textColor="@color/black"
+                    android:padding="3dp"
+                    />
+            </LinearLayout>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <com.koonat.easyfont.TextView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            app:font_path="fonts/Averta-Regular.otf"
+            android:textSize="15dp"
+            android:textColor="@color/red500"
+            android:layout_height="wrap_content"
+            android:text="Explanation :"/>
+
+        <com.koonat.easyfont.TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/textSize"
+            android:id="@+id/explanation"
+            android:textColor="@color/black"
+            android:padding="3dp"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:clickable="true"
+        android:id="@+id/controller">
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/category_image"
+            android:layout_centerVertical="true"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_engineering"/>
+
+
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_toRightOf="@+id/category_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engineering &amp; Technology"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+             />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="1"
+            android:buttonTint="@color/lightpink"
+            android:checked="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+        </CheckBox>
+    </RelativeLayout>
+</RelativeLayout>

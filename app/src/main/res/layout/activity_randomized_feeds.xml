@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.RandomizedFeedsActivity"
+    android:background="@color/background_dark"
+    android:layout_gravity="center_vertical"
+    android:gravity="center">
+
+    <com.koonat.easyfont.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:font_path="fonts/Averta-Bold.otf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-20dp"
+        android:textSize="15dp"
+        android:text="Flip Through Articles"
+        android:textColor="@color/white" />
+    <com.mindorks.placeholderview.SwipePlaceHolderView
+        android:id="@+id/swipeView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="20dp">
+
+    </com.mindorks.placeholderview.SwipePlaceHolderView>
+
+    <RelativeLayout
+        android:layout_below="@id/swipeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <android.support.design.widget.FloatingActionButton
+        android:id="@+id/previousButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="5dp"
+        android:src="@drawable/undo"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/likeButton"
+            android:elevation="5dp"
+            android:layout_width="40dp"
+            android:layout_toRightOf="@+id/previousButton"
+            android:layout_height="40dp"
+            android:src="@drawable/dice"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/shareButton"
+            android:layout_width="40dp"
+            android:elevation="5dp"
+            android:layout_toRightOf="@+id/likeButton"
+            android:layout_height="40dp"
+            android:src="@drawable/share_random"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

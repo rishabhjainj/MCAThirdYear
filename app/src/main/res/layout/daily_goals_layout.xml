@@ -1,0 +1,111 @@
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/daily_goals_layout"
+    android:layout_below="@+id/score_layout"
+    android:elevation="12dp"
+    android:layout_marginLeft="15dp"
+    app:cardElevation="10dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="15dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:src="@drawable/ic_goals"/>
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                app:font_path="fonts/Averta-Bold.otf"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:text="Your Daily Goals"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="30dp"
+
+                android:src="@drawable/ic_goals_contents"/>
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                app:font_path="fonts/Roboto-Light.ttf"
+                android:textSize="13dp"
+                android:id="@+id/goal1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Complete  Career Assessment to direct your career direction."/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="30dp"
+
+                android:src="@drawable/ic_goals_contents"/>
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                app:font_path="fonts/Roboto-Light.ttf"
+                android:textSize="13dp"
+                android:id="@+id/goal2"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Explore courses as per your interest."/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:src="@drawable/ic_goals_contents"/>
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/goal3"
+                app:font_path="fonts/Roboto-Light.ttf"
+                android:textSize="13dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Enrol into Skill Development programmes to avail big discounts."/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

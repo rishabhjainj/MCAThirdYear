@@ -1,0 +1,119 @@
+<LinearLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/layer1"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+            <com.koonat.easyfont.EditText
+                android:layout_width="wrap_content"
+                app:font_path="fonts/Averta-Regular.otf"
+                android:elevation="5dp"
+                android:paddingLeft="20dp"
+                android:textSize="15dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/couponTextView"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_rectanlge_white"
+                android:hint="Have Coupon?"
+
+                />
+
+            <com.koonat.easyfont.Button
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:id="@+id/applyPromo"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                app:font_path="fonts/Averta-Semibold.otf"
+                android:paddingRight="10dp"
+                android:text="APPLY"
+                android:textColor="@color/white"
+                android:background="@drawable/rouned_rectangle_blue"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/promoAppliedLayout"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_tick"
+                />
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp"
+                android:id="@+id/appliedText"
+                app:font_path="fonts/Averta-Regular.otf"
+                android:layout_height="wrap_content"
+                android:text="20% discount applied successfully"
+                android:textSize="10dp"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price:"
+                android:textSize="15dp"
+                app:font_path="fonts/Averta-Regular.otf"
+                android:textColor="@color/black_landing"
+                />
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rupee"
+                android:paddingLeft="10dp"
+                android:textSize="22dp"
+                app:font_path="fonts/Averta-Bold.otf"
+                android:textColor="@color/green_analysis"
+                />
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="800"
+                android:id="@+id/price"
+                android:textSize="22dp"
+                app:font_path="fonts/Averta-Bold.otf"
+                android:textColor="@color/green_analysis"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

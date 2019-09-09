@@ -1,0 +1,146 @@
+
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/college_course_layout"
+    android:layout_below="@+id/buy_course_layout_2"
+    app:cardElevation="10dp"
+    android:elevation="12dp"
+    android:layout_marginLeft="15dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginBottom="4dp"
+    android:layout_marginRight="15dp"
+    app:cardCornerRadius="10dp"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white">
+
+
+        <com.koonat.easyfont.TextView
+            android:id="@+id/career_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Career Blogs"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"
+
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            app:font_path="fonts/Roboto-Regular.ttf"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/career_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="VIEW ALL"
+            android:textColor="#00A0E7"
+            android:textSize="12sp"
+            android:id="@+id/view_all_career"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/career_text"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView android:layout_width="match_parent"
+                    android:elevation="12dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="50"
+                        android:background="@color/white"
+                        android:id="@+id/career_blog_image"
+                        android:scaleType="centerCrop"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/careerblog1"/>
+
+
+                </android.support.v7.widget.CardView>
+                <com.koonat.easyfont.TextView
+                    android:layout_width="match_parent"
+                    android:padding="4dp"
+                    android:textColor="@color/black_landing"
+                    android:textStyle="bold"
+                    android:id="@+id/career_blog_text"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="Bengaluru Ranks Among Top Three Cities Globally For Launch Of Tech Startups"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView android:layout_width="match_parent"
+                    android:elevation="12dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="50"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/careerblog2"/>
+
+
+                </android.support.v7.widget.CardView>
+                <com.koonat.easyfont.TextView
+                    android:layout_width="match_parent"
+                    android:padding="4dp"
+                    android:textColor="@color/black_landing"
+                    android:textStyle="bold"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="Top Career Options in India"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

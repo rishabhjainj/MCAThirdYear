@@ -1,0 +1,49 @@
+<android.support.design.widget.AppBarLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    android:id="@+id/actionbar"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:paddingRight="10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/icon"
+                android:src="@drawable/ic_historygoals"/>
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                app:font_path="fonts/Averta-Regular.otf"
+                android:layout_height="wrap_content"
+                android:text="History &amp; Goals"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/tooltilte"
+                android:textSize="20dp"
+                android:textColor="@color/black_landing"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/endbtn"
+                android:src="@drawable/ic_exit"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:padding="3dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/backbtn"
+                    android:src="@drawable/back_button_course"
+                    />
+
+                <TextView
+                    android:id="@+id/tooltilte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/backbtn"
+                    android:gravity="center_vertical"
+                    android:text="My Report"
+                    android:textColor="@color/black"
+                    android:padding="5dp"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/endbtn"
+                    android:src="@drawable/ic_exit_exit"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="10dp"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/cover"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_below="@+id/appbar"
+        android:layout_height="180dp"
+        android:src="@drawable/analysis_cover"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="55dp"
+        android:layout_below="@+id/cover"
+        android:id="@+id/analysis_sections_recycler_view"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.koonat.easyfont.Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:elevation="15dp"
+        android:clickable="true"
+        app:font_path="fonts/Averta-Bold.otf"
+        android:textSize="20dp"
+        android:id="@+id/reportbtn"
+        android:layout_alignParentBottom="true"
+        android:text="VIEW REPORT"
+        android:textColor="@color/white"
+        android:background="@color/green_analysis"
+        />
+</RelativeLayout>

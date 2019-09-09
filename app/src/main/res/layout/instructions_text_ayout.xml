@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/inst_text"
+    app:cardBackgroundColor="@color/dullwhite"
+    android:layout_below="@+id/app_bar_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+
+    android:layout_marginTop="-15dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/content_about_us"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.koonat.easyfont.TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:paddingTop="10dp"
+                app:font_path="fonts/Averta-Regular.otf"
+                android:text="Instructions for Test"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                app:font_path="fonts/Averta-Regular.otf"
+                android:padding="2dp"
+                android:textSize="15dp"
+                android:textColor="@color/black_landing"
+                android:layout_height="wrap_content"
+                android:text="1. The clock has been set at the server for the Test."/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:src="@drawable/chevron"/>-->
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                app:font_path="fonts/Averta-Regular.otf"
+                android:padding="2dp"
+                android:textSize="15dp"
+                android:textColor="@color/black_landing"
+                android:layout_height="wrap_content"
+                android:text="2. The timer on the top right corner of the screen tells you the remaining time."/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:src="@drawable/chevron"/>-->
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                app:font_path="fonts/Averta-Regular.otf"
+                android:padding="2dp"
+                android:textSize="15dp"
+                android:textColor="@color/black_landing"
+                android:layout_height="wrap_content"
+                android:text="3. Navigate through the questions using Next or Back Buttons."/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:src="@drawable/chevron"/>-->
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                app:font_path="fonts/Averta-Regular.otf"
+                android:padding="2dp"
+                android:textColor="@color/black_landing"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="4. Click on the option, to select as your choice."/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:src="@drawable/chevron"/>-->
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                app:font_path="fonts/Averta-Regular.otf"
+                android:padding="2dp"
+                android:textColor="@color/black_landing"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="5. For each right answer 1.00 marks will be provided."/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:src="@drawable/chevron"/>-->
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginBottom="50dp"
+                app:font_path="fonts/Averta-Regular.otf"
+                android:padding="2dp"
+                android:textColor="@color/black_landing"
+                android:layout_height="wrap_content"
+                android:text="6. Exam ends as the clock runs out."/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

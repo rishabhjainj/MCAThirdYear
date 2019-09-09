@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Name Label -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:text="Name of The Exam"
+            android:textColor="@color/darkblue"
+            android:textSize="@dimen/textSize" />
+
+
+        <EditText
+            android:id="@+id/college1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColorLink="@color/darkblue"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:text="Exam Date"
+            android:textColor="@color/bluetxt"
+            android:textSize="@dimen/textSize" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:textColorLink="@color/blue"
+                android:textSize="@dimen/textSize" />
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:onClick="setDate"
+                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_calender"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Overall Score Obtained"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/passyear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:textColorLink="@color/darkblue"
+                android:textSize="@dimen/textSize" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/darkblue"
+            />
+
+
+    </LinearLayout>

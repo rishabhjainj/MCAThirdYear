@@ -1,0 +1,131 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="65dp"
+                android:id="@+id/recommender"
+                android:src="@drawable/ic_course" />
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text=" Career Assessment"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:id="@+id/middle"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/news_events"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="65dp"
+                    android:src="@drawable/ic_career_news" />
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:text="Career News"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="65dp"
+                    android:id="@+id/events_image"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_events" />
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="Events &amp; Contests"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_above="@+id/middle"
+        android:layout_height="wrap_content"
+        android:id="@+id/top"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:id="@+id/rewards"
+                android:src="@drawable/ic_internship" />
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="Rewards &amp; Internships"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

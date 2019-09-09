@@ -1,0 +1,148 @@
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/course_popularity_layout"
+    android:layout_below="@+id/appbar_layout"
+    android:elevation="20dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="15dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="-10dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bookmark"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/stats_course" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.koonat.easyfont.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="COURSE POPULARITY"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    app:font_path="fonts/Averta-Regular.otf" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.koonat.easyfont.TextView
+                        android:id="@+id/popularity_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="72%"
+                        android:textColor="@color/darkorangecourse"
+                        android:textSize="23dp"
+                        app:font_path="fonts/Averta-Bold.otf" />
+
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|bottom"
+                        android:text="(based on viewers activities)"
+                        android:textColor="@color/black_landing"
+                        android:textSize="12dp"
+                        app:font_path="fonts/Averta-Regular.otf" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="end"
+                android:maxLines="6"
+                android:id="@+id/goal1"
+                app:font_path="fonts/Averta-Regular.otf"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Web Development courses will build your skills in creating web applications. Learn HTML/CSS and modern framewokrs; PHP, Javascript, Python, and other programming languages; and modern back-end technologies"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_height="wrap_content">
+            <com.koonat.easyfont.TextView
+                android:layout_width="match_parent"
+                app:font_path="fonts/Averta-Semibold.otf"
+                android:textSize="15dp"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:id="@+id/learnmore"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/black_landing"
+                android:layout_height="wrap_content"
+                android:text="LEARN MORE"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+        <include layout="@layout/buy_course_hut"
+            />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

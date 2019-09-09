@@ -1,0 +1,372 @@
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/course_popularity_layout"
+    android:layout_below="@+id/appbar_layout"
+    android:elevation="20dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="15dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="-10dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bookmark"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/stats_course" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.koonat.easyfont.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="CAREER POPULARITY"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/poppercentage"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="72%"
+                        android:textColor="@color/darkorangecourse"
+                        android:textSize="23dp"
+                        app:font_path="fonts/Averta-Bold.otf" />
+
+                    <com.koonat.easyfont.TextView
+                        android:layout_width="wrap_content"
+                        app:font_path="fonts/Averta-Regular.otf"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|bottom"
+                        android:text="(based on viewers activities)"
+                        android:textColor="@color/black_landing"
+                        android:textSize="12dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                app:font_path="fonts/Averta-Regular.otf"
+                android:textSize="15dp"
+                android:id="@+id/poptext"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Data Science Specializations and courses teach the fundamentals of interpreting data, performing analysis, and understanding and communicating actionable insights."
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_category_pop"
+                android:layout_weight="20"
+                android:layout_height="25dp"
+                />
+            <LinearLayout
+                android:layout_weight="80"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            <com.koonat.easyfont.TextView
+                android:layout_weight="80"
+                android:layout_width="wrap_content"
+                android:gravity="left"
+                app:font_path="fonts/Averta-Bold.otf"
+                android:textSize="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="CATEGORY"
+                />
+                <com.koonat.easyfont.TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/category_text"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Data Science"
+                    />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_salary"
+                android:layout_weight="20"
+                android:layout_height="25dp"
+                />
+            <LinearLayout
+                android:layout_weight="80"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <com.koonat.easyfont.TextView
+                    android:layout_weight="80"
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+                    app:font_path="fonts/Averta-Bold.otf"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="SALARY"
+                    />
+                <com.koonat.easyfont.TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:textSize="12dp"
+                    android:id="@+id/salary_text"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="50k-90k"
+                    />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ic_employment"
+                android:layout_weight="20"
+                android:layout_height="25dp"
+                />
+            <LinearLayout
+                android:layout_weight="80"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <com.koonat.easyfont.TextView
+                    android:layout_weight="80"
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+                    app:font_path="fonts/Averta-Bold.otf"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="EMPLOYMENT OPPORTUNITIES"
+                    />
+                <com.koonat.easyfont.TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:textSize="12dp"
+                    android:id="@+id/employment_text"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Low"
+                    />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ic_educatiionalreq"
+                android:layout_weight="20"
+                android:layout_height="25dp"
+                />
+            <LinearLayout
+                android:layout_weight="80"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <com.koonat.easyfont.TextView
+                    android:layout_weight="80"
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    app:font_path="fonts/Averta-Bold.otf"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="EDUCATIONAL REQUIREMENTS"
+                    />
+                <com.koonat.easyfont.TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginRight="30dp"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:textSize="13dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/edu_req_text"
+                    android:layout_height="wrap_content"
+                    android:text="Science Graduates,Master's in Data Science"
+                    />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ic_personal_qualities"
+                android:layout_weight="20"
+                android:layout_height="25dp"
+                />
+            <LinearLayout
+                android:layout_weight="80"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <com.koonat.easyfont.TextView
+                    android:layout_weight="80"
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+                    app:font_path="fonts/Averta-Bold.otf"
+                    android:textSize="13dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="PERSONAL QUALITIES"
+                    />
+                <com.koonat.easyfont.TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/personal_text"
+                    app:font_path="fonts/Averta-Regular.otf"
+                    android:textSize="13dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Analytical Skill,Creativity,Teamwork,Verbal Communication Skill, Problem Solving Capabilities"
+                    />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
